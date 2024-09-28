@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    
+  }
+} */
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom traits des liens burger menu */
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 30px;
+  height: 3px;
+  transition: 0.3s ease;
+}
+
+.dark .link::after {
+  background-color: white;
+}
+
+.link::after {
+  background-color: #c6b18a;
+}
+
+.link:hover::after {
+  width: 100%;
+}
