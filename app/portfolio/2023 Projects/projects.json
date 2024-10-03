@@ -1,0 +1,46 @@
+{
+  "project_1": {
+    "title": "Ancien Portfolio",
+    "link": "ancien_portfolio",
+    "img_primary": "/assets/ancien_portfolio_logo.png",
+    "width_img": 2000,
+    "height_img": 2000,
+    "color_bg": "#000",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.",
+    "technos": ["React", "HTML", "CSS", "Javascript"],
+    "website_link": ""
+  },
+  "project_2": {
+    "title": "UTF France",
+    "link": "utf_france",
+    "img_primary": "/assets/utf_logo.png",
+    "width_img": 200,
+    "height_img": 200,
+    "color_bg": "#FFF3DD",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.",
+    "technos": ["React", "HTML", "CSS", "Javascript"],
+    "website_link": "https://utf-app.netlify.app/"
+  },
+  "project_3": {
+    "title": "Projet \"Autres\"",
+    "link": "projet_autres",
+    "img_primary": "/assets/projet_autres_logo.png",
+    "width_img": 2100,
+    "height_img": 2100,
+    "color_bg": "#fff",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.",
+    "technos": ["React", "HTML", "CSS", "Javascript"],
+    "website_link": "https://bahoooz.github.io/other-projects/"
+  },
+  "project_4": {
+    "title": "Ecobot",
+    "link": "ecobot",
+    "img_primary": "/assets/ecobot_logo.png",
+    "width_img": 2100,
+    "height_img": 2100,
+    "color_bg": "#44AB5C",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.",
+    "technos": ["HTML", "CSS", "Javascript"],
+    "website_link": "https://eco-bot-web.glitch.me/"
+  }
+}

@@ -3,7 +3,11 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { CircleNotch, Moon, Sun } from "@phosphor-icons/react";
+import { Moon, Sun } from "@phosphor-icons/react";
+
+const LoadingIcon = () => {
+  return <div className="loading-icon"></div>;
+};
 
 export function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
@@ -13,12 +17,12 @@ export function ThemeSwitcher() {
     setMounted(true);
   }, []);
 
-  if (!mounted) return <CircleNotch />;
+  if (!mounted) return <LoadingIcon />;
   if (resolvedTheme === "dark") {
     return (
       <Sun
         weight="fill"
-        className="dark:text-white text-darkBrown cursor-pointer"
+        className="dark:text-white text-darkBrown cursor-pointer hover:scale-95 hover:opacity-90 transition-all"
         size={32}
         onClick={() => setTheme("light")}
       />
@@ -28,7 +32,7 @@ export function ThemeSwitcher() {
     return (
       <Moon
         weight="fill"
-        className="dark:text-white text-darkBrown cursor-pointer"
+        className="dark:text-white text-darkBrown cursor-pointer hover:scale-95 hover:opacity-90 transition-all"
         size={32}
         onClick={() => setTheme("dark")}
       />

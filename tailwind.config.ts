@@ -17,7 +17,9 @@ const config: Config = {
         darkYellow: "#C6B18A",
         lightBrown: "#85662D",
         darkBrown: "#6b5121",
-        bgColor: "#241F19",
+        bgColorLight: "#FFFCF6",
+        bgColorDark: "#241F19",
+        bgFooter: "#1A1510"
       },
     },
   },

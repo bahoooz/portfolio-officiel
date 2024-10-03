@@ -14,7 +14,9 @@ export default function Navbar() {
     pathname === "/en" ? "/assets/flag_fr.png" : "/assets/flag_en.png";
 
   return (
-    <div className="fixed h-14 z-20 top-5 w-full flex justify-between items-center px-10">
+    <nav
+      className="fixed h-14 z-20 top-5 w-full flex justify-between items-center px-10"
+    >
       <Link
         className="hidden md:block text-darkBrown dark:text-lightYellow hover:underline"
         href={"/contact"}
@@ -26,7 +28,7 @@ export default function Navbar() {
         <Link href={linkHref}>
           <Image
             src={flag}
-            className="w-8"
+            className="w-8 hover:scale-95 hover:opacity-90 transition-all"
             alt="langue en"
             width={512}
             height={512}
@@ -34,6 +36,6 @@ export default function Navbar() {
         </Link>
       </div>
       <BurgerMenu />
-    </div>
+    </nav>
   );
 }

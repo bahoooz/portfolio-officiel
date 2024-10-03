@@ -1,18 +1,28 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
+import { AProposTypes } from "./types/typeHome";
 
-export default function APropos() {
+export default function APropos({ title, text, btn }: AProposTypes) {
   return (
-    <div className="my-24 lg:my-36" id="about">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.7 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.4 }}
+      className="my-24 lg:my-36"
+      id="about"
+    >
       <div className="lg:flex lg:justify-center lg:gap-16 xl:gap-24 2xl:gap-32">
         <div className="flex flex-col items-center">
           <div className="max-w-[302px] sm:max-w-[404px] md:max-w-[431px] xl:max-w-[480px] 2xl:max-w-[500px]">
             <h2 className="text-lightBrown dark:text-lightYellow text-2xl sm:text-3xl md:text-4xl xl:text-[40px] font-bold mb-8 lg:mb-12">
-              À propos de moi
+              {title}
             </h2>
             <p className="mb-7 leading-8">
-              Jeune développeur web avec{" "}
+              {/* Jeune développeur web avec{" "}
               <span className="text-lightBrown dark:text-darkYellow">
                 1-2 ans d’expérience
               </span>{" "}
@@ -28,11 +38,12 @@ export default function APropos() {
                 freelancing avec Fiverr
               </span>{" "}
               j’ai pu me faire mes premiers clients et travailler sur des
-              projets plus concrêts.
+              projets plus concrêts. */}
+              {text}
             </p>
             <Link href={"/CV Julien.pdf"} target="_blank">
-              <button className="bg-lightBrown dark:bg-darkYellow dark:text-bgColor px-7 py-3 rounded-xl text-sm text-white">
-                Télécharger mon CV
+              <button className="bg-lightBrown dark:bg-darkYellow dark:text-bgColor px-7 py-3 rounded-xl text-sm text-white hover:bg-opacity-75 dark:hover:bg-opacity-75 transition-all">
+                {btn}
               </button>
             </Link>
           </div>
@@ -54,6 +65,6 @@ export default function APropos() {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -14,17 +14,17 @@ export default function BurgerMenu() {
         {isOpen ? (
           <X
             size={32}
-            className="dark:text-white text-darkBrown cursor-pointer"
+            className="dark:text-lightYellow text-darkBrown cursor-pointer"
           />
         ) : (
           <List
             size={32}
-            className="dark:text-white text-darkBrown cursor-pointer"
+            className="dark:text-lightYellow text-darkBrown cursor-pointer"
           />
         )}
       </div>
       <div
-        className={`bg-white dark:bg-black h-[100dvh] w-full fixed -z-10 left-0 top-0 transition-transform duration-500 transform flex flex-col items-start justify-center ${
+        className={`bg-bgColorLight dark:bg-bgColorDark h-[100dvh] w-full fixed -z-10 left-0 top-0 transition-transform duration-500 transform flex flex-col items-start justify-center ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
