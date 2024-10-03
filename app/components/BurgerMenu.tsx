@@ -4,10 +4,14 @@ import { List, X } from "@phosphor-icons/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { useState } from "react";
 
-export default function BurgerMenu() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function BurgerMenu({
+  isOpen,
+  setIsOpen,
+}: {
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   return (
     <div>
       <div onClick={() => setIsOpen(!isOpen)}>
