@@ -6,9 +6,9 @@
     "width_img": 2000,
     "height_img": 2000,
     "color_bg": "#000",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.",
+    "description": "Mon ancien portfolio, réalisé avec React, présente mes projets et compétences en développement web. Il s'agit d'une vitrine simple et efficace, mettant en avant mes travaux dans un style épuré et moderne, tout en utilisant des technologies basiques comme HTML, CSS, JavaScript et React. Ce portfolio m’a permis de renforcer mes compétences en design web et développement front-end et surtout de partager mes projets.",
     "technos": ["React", "HTML", "CSS", "Javascript"],
-    "website_link": ""
+    "website_link": "https://bahoz-dev.netlify.app/"
   },
   "project_2": {
     "title": "UTF France",
@@ -17,7 +17,7 @@
     "width_img": 200,
     "height_img": 200,
     "color_bg": "#FFF3DD",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.",
+    "description": "UTF France est la landing page d'une application web réalisée dans le cadre d'un stage chez l'Union Technique Française (UTF). Ce projet avait pour but de développer une plateforme de recrutement en ressources humaines, permettant à UTF de gérer les candidatures et d'améliorer leur processus de recrutement. La page d'accueil présente l'application et ses fonctionnalités, mettant en avant les services RH proposés par UTF.",
     "technos": ["React", "HTML", "CSS", "Javascript"],
     "website_link": "https://utf-app.netlify.app/"
   },
@@ -28,7 +28,7 @@
     "width_img": 2100,
     "height_img": 2100,
     "color_bg": "#fff",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.",
+    "description": "Ce projet regroupe plusieurs petits développements que j’ai réalisés pour tester des idées ou expérimenter avec des technologies. Il s’agit d’un ensemble d'exercices pratiques permettant d'explorer différentes approches de développement web sans avoir un objectif précis de produit fini. Un excellent exercice pour améliorer mes compétences en HTML, CSS et JavaScript.",
     "technos": ["React", "HTML", "CSS", "Javascript"],
     "website_link": "https://bahoooz.github.io/other-projects/"
   },
@@ -39,7 +39,7 @@
     "width_img": 2100,
     "height_img": 2100,
     "color_bg": "#44AB5C",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.",
+    "description": "Ecobot est un projet conceptuel mettant en scène une intelligence artificielle fictive dédiée à la génération de contenu multimédia sur des sujets liés à l'écologie. L'objectif est de sensibiliser les utilisateurs aux enjeux environnementaux grâce à des recommandations interactives et dynamiques. Ce projet explore l'usage d'IA dans un contexte fictif pour créer une interface ludique tout en éduquant sur les pratiques écologiques.",
     "technos": ["HTML", "CSS", "Javascript"],
     "website_link": "https://eco-bot-web.glitch.me/"
   }

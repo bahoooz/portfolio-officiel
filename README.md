@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mon Portfolio - 2024
 
-## Getting Started
+Bienvenue sur mon portfolio personnel, développé en 2024 avec [Next.js](https://nextjs.org). Ce site met en avant mes compétences en développement web et présente une sélection de mes projets récents, réalisés dans le cadre de mes études et expériences professionnelles. Vous y trouverez des exemples de mes travaux, allant de la création de sites web à des applications plus complexes.
 
-First, run the development server:
+## Présentation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Ce portfolio a été conçu pour offrir une expérience utilisateur fluide et moderne, tout en illustrant ma maîtrise des technologies web récentes. J'ai utilisé **Next.js** pour profiter de ses fonctionnalités de rendu côté serveur, ainsi que **React** et **Tailwind CSS** pour un développement rapide et une interface soignée.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Les projets présentés sur ce site couvrent différents aspects du développement, incluant la gestion de bases de données, l'intégration d'APIs et la création d'interfaces utilisateur dynamiques. J'ai également intégré des solutions d'authentification et de paiements sécurisés pour certaines applications.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Fonctionnalités
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Rendu optimisé** : Utilisation de Next.js pour un rendu côté serveur et des performances améliorées.
+- **Design réactif** : Tous les projets sont stylisés avec **Tailwind CSS**, garantissant une expérience fluide sur tous les appareils.
+- **Projets dynamiques** : Mes projets incluent des applications interactives, des blogs personnels, et des solutions sur mesure pour des entreprises.
+- **Authentification sécurisée** : Intégration de **NextAuth.js** pour une gestion des utilisateurs dans certains projets.
+- **Paiements en ligne** : Utilisation de **Stripe** pour les fonctionnalités de paiement dans des projets de commerce en ligne.
 
-## Learn More
+## Objectif du projet
 
-To learn more about Next.js, take a look at the following resources:
+L'objectif de ce portfolio est de démontrer mes compétences en développement web moderne, en mettant en lumière des exemples concrets de mon travail. Ce site reflète ma capacité à gérer des projets de bout en bout, de la conception initiale à la mise en ligne, et à adopter les meilleures pratiques du développement web.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Projets inclus
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Sunline Énergie** : Plateforme de promotion de l'énergie solaire pour une entreprise régionale.
+- **Garry's Mod Creators** : Application dédiée aux créateurs de serveurs Garry's Mod.
+- **UTF France** : Landing page d'une application RH développée durant un stage.
+- **Ecobot** : Concept d'IA fictive pour sensibiliser à l'écologie à travers des médias générés.
 
-## Deploy on Vercel
+## Déploiement
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Ce portfolio est déployé sur [Vercel](https://vercel.com), une plateforme de premier choix pour les applications Next.js, garantissant un temps de chargement rapide et des performances optimales.
