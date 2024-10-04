@@ -7,6 +7,10 @@ import { z } from "zod";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 
+const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+
 const schema = z.object({
   email: z.string().email({ message: "Veuillez entrer un email valide." }),
   lastname: z
@@ -53,29 +57,22 @@ export default function ContactForm() {
       setErrors(result.error.format());
       return;
     }
-    emailjs
-      .sendForm(
-        "service_0rs7k5b",
-        "template_nxboxei",
-        form.current,
-        "z1hulV2FtSzNovms2"
-      )
-      .then(
-        () => {
-          console.log("Envoi réussi !");
-          form.current.reset();
-          setCommentaryLength(0);
-          window.scrollBy({ top: 250, behavior: "smooth" });
-          setEndingMessage(
-            "Merci à vous d'avoir rempli le formulaire, une réponse vous sera communiqué sous 24h maximum 👍"
-          );
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-          console.error("Error details:", error);
-          setEndingMessage("Une erreur s'est produite, veuillez réessayez.");
-        }
-      );
+    emailjs.sendForm(serviceId!, templateId!, form.current, publicKey!).then(
+      () => {
+        console.log("Envoi réussi !");
+        form.current.reset();
+        setCommentaryLength(0);
+        window.scrollBy({ top: 250, behavior: "smooth" });
+        setEndingMessage(
+          "Merci à vous d'avoir rempli le formulaire, une réponse vous sera communiqué sous 24h maximum 👍"
+        );
+      },
+      (error) => {
+        console.log("FAILED...", error.text);
+        console.error("Error details:", error);
+        setEndingMessage("Une erreur s'est produite, veuillez réessayez.");
+      }
+    );
   };
 
   return (
