@@ -69,7 +69,15 @@ export default function RootLayout({
         <link rel="canonical" href="https://www.bahoz-dev.com" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="fr_FR" />
+        <meta property="og:title" content="Portfolio Bahoz" />
+        <meta
+          property="og:description"
+          content="Développeur web parisien de 18 ans, découvrez mon portfolio et travaillons ensemble !"
+        />
+        <meta name="twitter:image" content="/assets/diamond_icon.png" />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+        <link rel="icon" href="/assets/diamond_icon.png" />
+        <link rel="apple-touch-icon" href="/assets/diamond_icon.png" />
       </head>
       <body
         className={
