@@ -19,6 +19,8 @@ export const metadata: Metadata = {
     "Bahoz",
     "Web development",
     "Freelance",
+    "Web",
+    "Development",
   ],
   authors: [{ name: "Bahoz" }],
   openGraph: {
@@ -61,6 +63,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" suppressHydrationWarning>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.bahoz-dev.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="fr_FR" />
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+      </head>
       <body
         className={
           "antialiased dark:bg-bgColorDark bg-bgColorLight relative font-title"

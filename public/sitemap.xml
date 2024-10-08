@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- URL de la page d'accueil -->
+  <url>
+    <loc>https://www.bahoz-dev.com/</loc>
+    <lastmod>2024-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- URL de la page "À propos" -->
+  <url>
+    <loc>https://www.bahoz-dev.com/parcours</loc>
+    <lastmod>2024-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- URL de la page "Portoflio" -->
+  <url>
+    <loc>https://www.bahoz-dev.com/portfolio</loc>
+    <lastmod>2024-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- URL de la page "Contact" -->
+  <url>
+    <loc>https://www.bahoz-dev.com/contact</loc>
+    <lastmod>2024-10-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Ajouter d'autres pages importantes si nécessaire -->
+</urlset>

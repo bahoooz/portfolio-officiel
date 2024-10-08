@@ -80,3 +80,9 @@ body {
     transform: rotate(360deg);
   }
 }
+
+/* BG Positions */
+
+.object-position {
+  object-position: 0 -50px;
+}

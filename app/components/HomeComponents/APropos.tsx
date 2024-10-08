@@ -54,14 +54,14 @@ export default function APropos({ title, text, btn }: AProposTypes) {
             alt="photo trophée"
             width={3024}
             height={4032}
-            className="w-[90%] sm:w-[404px] md:w-[431px] h-[35vw] sm:h-48 xl:h-52 object-cover mx-auto rounded-lg lg:absolute lg:top-1/3 xl:top-1/4 lg:-translate-y-1/2 right-0 lg:w-3/4 xl:w-4/5 2xl:"
+            className="w-[90%] sm:w-[404px] md:w-[431px] h-[40vw] sm:h-48 xl:h-52 object-cover mx-auto rounded-lg lg:absolute lg:top-1/3 xl:top-1/4 lg:-translate-y-1/2 right-0 lg:w-3/4 xl:w-4/5 object-position"
           />
           <Image
             src={"/assets/la_toile.png"}
             alt="photo la toile"
             width={1417}
             height={945}
-            className="w-[90%] sm:w-[404px] md:w-[431px] h-[35vw] sm:h-48 xl:h-52 object-cover mx-auto rounded-lg lg:absolute lg:bottom-1/4 xl:bottom-[35%] lg:translate-y-1/2 left-0 lg:w-3/4 xl:w-4/5"
+            className="w-[90%] sm:w-[404px] md:w-[431px] h-[40vw] sm:h-48 xl:h-52 object-cover mx-auto rounded-lg lg:absolute lg:bottom-1/4 xl:bottom-[35%] lg:translate-y-1/2 left-0 lg:w-3/4 xl:w-4/5"
           />
         </div>
       </div>
