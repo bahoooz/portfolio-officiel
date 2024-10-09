@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-import { AProposTypes } from "./types/typeHome";
+import { AProposTypes } from "../types/typesComponents";
 
 export default function APropos({ title, text, btn }: AProposTypes) {
   return (

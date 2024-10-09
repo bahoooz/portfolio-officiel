@@ -4,14 +4,15 @@ import { List, X } from "@phosphor-icons/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { BurgerMenuTypes } from "./types/typesComponents";
 
 export default function BurgerMenu({
   isOpen,
   setIsOpen,
-}: {
-  isOpen: boolean;
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}) {
+  home_link,
+  findme_link,
+  contact_link,
+}: BurgerMenuTypes) {
   return (
     <div>
       <div onClick={() => setIsOpen(!isOpen)}>
@@ -39,7 +40,7 @@ export default function BurgerMenu({
               href={"/"}
               className="link relative text-2xl font-light dark:text-darkYellow text-black"
             >
-              Accueil
+              {home_link}
             </Link>
           </li>
           <li>
@@ -57,7 +58,7 @@ export default function BurgerMenu({
               href={"/parcours"}
               className="link relative text-2xl font-light dark:text-darkYellow text-black"
             >
-              Mon Parcours
+              {findme_link}
             </Link>
           </li>
           <li>
@@ -66,7 +67,7 @@ export default function BurgerMenu({
               href={"/contact"}
               className="link relative text-2xl font-light dark:text-darkYellow text-black"
             >
-              Me contacter
+              {contact_link}
             </Link>
           </li>
         </ul>

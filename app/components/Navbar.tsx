@@ -7,13 +7,15 @@ import Image from "next/image";
 import BurgerMenu from "./BurgerMenu";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { NavbarTypes } from "./types/typesComponents";
 
-export default function Navbar() {
+export default function Navbar({ get_quote }: NavbarTypes) {
   const pathname = usePathname();
   const linkHref = pathname === "/en" ? "/" : "/en";
   const flag =
     pathname === "/en" ? "/assets/flag_fr.png" : "/assets/flag_en.png";
   const [isOpen, setIsOpen] = useState(false);
+  const isEnglish = pathname.startsWith("/en");
 
   return (
     <nav className="fixed h-14 z-20 top-5 w-full flex justify-between items-center px-10">
@@ -22,7 +24,7 @@ export default function Navbar() {
         href={"/contact"}
         onClick={() => setIsOpen(false)}
       >
-        Obtenir un devis
+        {get_quote}
       </Link>
       <div className="flex gap-4 md:absolute md:left-1/2 md:-translate-x-1/2 ">
         <ThemeSwitcher />
@@ -37,7 +39,13 @@ export default function Navbar() {
         </Link>
       </div>
       <div onClick={() => setIsOpen(!isOpen)}>
-        <BurgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />
+        <BurgerMenu
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          home_link={isEnglish ? "Home" : "Accueil"}
+          findme_link={isEnglish ? "Where to find me" : "Où me retrouver"}
+          contact_link={isEnglish ? "Contact me" : "Me contacter"}
+        />
       </div>
     </nav>
   );

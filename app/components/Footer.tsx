@@ -5,8 +5,9 @@ import { ThemeSwitcher } from "./ThemeSwitcher";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { FooterTypes } from "./types/typesComponents";
 
-export default function Footer() {
+export default function Footer({ home_link, find_me_link }: FooterTypes) {
   const pathname = usePathname();
   const linkHref = pathname === "/en" ? "/" : "/en";
   const flag =
@@ -32,7 +33,7 @@ export default function Footer() {
           <ul className="flex flex-col gap-6  text-lightBrown dark:text-darkYellow">
             <li>
               <Link href={"/"} className="hover:underline">
-                Accueil
+                {home_link}
               </Link>
             </li>
             <li>
@@ -41,13 +42,13 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href={"/contact"} className="hover:underline">
-                Contact
+              <Link href={"/parcours"} className="hover:underline">
+                {find_me_link}
               </Link>
             </li>
             <li>
-              <Link href={"/parcours"} className="hover:underline">
-                Où me retrouver
+              <Link href={"/contact"} className="hover:underline">
+                Contact
               </Link>
             </li>
           </ul>
