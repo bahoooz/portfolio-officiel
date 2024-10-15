@@ -43,7 +43,7 @@ export default function Navbar({ get_quote }: NavbarTypes) {
           isOpen={isOpen}
           setIsOpen={setIsOpen}
           home_link={isEnglish ? "Home" : "Accueil"}
-          project_galery_link={isEnglish ? "Project Galery" : "Galerie des projets"}
+          project_galery_link={isEnglish ? "Project galery" : "Galerie des projets"}
           findme_link={isEnglish ? "Where to find me" : "Où me retrouver"}
           contact_link={isEnglish ? "Contact me" : "Me contacter"}
         />
