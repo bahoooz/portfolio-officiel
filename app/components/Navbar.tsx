@@ -38,11 +38,12 @@ export default function Navbar({ get_quote }: NavbarTypes) {
           />
         </Link>
       </div>
-      <div onClick={() => setIsOpen(!isOpen)}>
+      <div>
         <BurgerMenu
           isOpen={isOpen}
           setIsOpen={setIsOpen}
           home_link={isEnglish ? "Home" : "Accueil"}
+          project_galery_link={isEnglish ? "Project Galery" : "Galerie des projets"}
           findme_link={isEnglish ? "Where to find me" : "Où me retrouver"}
           contact_link={isEnglish ? "Contact me" : "Me contacter"}
         />

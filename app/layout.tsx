@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Développeur web parisien de 18 ans, découvrez mon portfolio et travaillons ensemble !",
   icons: {
-    icon: "/assets/diamond_icon.png",
+    icon: "/assets/icon_website.png",
   },
   keywords: [
     "Développeur web",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "Portfolio Bahoz",
     images: [
       {
-        url: "/assets/diamond_icon.png",
+        url: "/assets/icon_website.png",
         width: 1200,
         height: 630,
         alt: "Portfolio Bahoz",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Accueil - Portfolio Bahoz",
     description:
       "Découvrez le portfolio de Bahoz, un développeur web parisien de 18 ans, et commencez à travailler ensemble sur vos projets.",
-    images: ["/assets/diamond_icon.png"],
+    images: ["/assets/icon_website.png"],
   },
   robots: {
     index: true,

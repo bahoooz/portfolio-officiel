@@ -13,6 +13,7 @@ export type BurgerMenuTypes = {
   isOpen: boolean;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
   home_link: string;
+  project_galery_link: string;
   findme_link: string;
   contact_link: string;
 };

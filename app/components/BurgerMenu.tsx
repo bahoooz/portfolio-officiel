@@ -10,6 +10,7 @@ export default function BurgerMenu({
   isOpen,
   setIsOpen,
   home_link,
+  project_galery_link,
   findme_link,
   contact_link,
 }: BurgerMenuTypes) {
@@ -36,7 +37,7 @@ export default function BurgerMenu({
         <ul className="ml-20 sm:ml-40 md:ml-48 lg:ml-80 xl:ml-96 flex flex-col gap-8 -mt-6">
           <li>
             <Link
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={() => setIsOpen(false)}
               href={"/"}
               className="link relative text-2xl font-light dark:text-darkYellow text-black"
             >
@@ -45,16 +46,16 @@ export default function BurgerMenu({
           </li>
           <li>
             <Link
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={() => setIsOpen(false)}
               href={"/portfolio"}
               className="link relative text-2xl font-light dark:text-darkYellow text-black"
             >
-              Portfolio
+              {project_galery_link}
             </Link>
           </li>
           <li>
             <Link
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={() => setIsOpen(false)}
               href={"/parcours"}
               className="link relative text-2xl font-light dark:text-darkYellow text-black"
             >
@@ -63,7 +64,7 @@ export default function BurgerMenu({
           </li>
           <li>
             <Link
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={() => setIsOpen(false)}
               href={"/contact"}
               className="link relative text-2xl font-light dark:text-darkYellow text-black"
             >
