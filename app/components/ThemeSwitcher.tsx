@@ -23,7 +23,7 @@ export function ThemeSwitcher() {
       <Sun
         weight="fill"
         className="dark:text-white text-darkBrown cursor-pointer hover:scale-95 hover:opacity-90 transition-all"
-        size={32}
+        size={30}
         onClick={() => setTheme("light")}
       />
     );

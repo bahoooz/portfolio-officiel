@@ -26,24 +26,26 @@ export default function Navbar({ get_quote }: NavbarTypes) {
       >
         {get_quote}
       </Link>
-      <div className="flex gap-4 md:absolute md:left-1/2 md:-translate-x-1/2 ">
-        <ThemeSwitcher />
-        <Link href={linkHref} onClick={() => setIsOpen(false)}>
-          <Image
-            src={flag}
-            className="w-8 hover:scale-95 hover:opacity-90 transition-all"
-            alt="langue en"
-            width={512}
-            height={512}
-          />
-        </Link>
-      </div>
-      <div>
+      <div className="flex gap-16">
+        <div className="flex gap-4 items-center">
+          <ThemeSwitcher />
+          <Link href={linkHref} onClick={() => setIsOpen(false)}>
+            <Image
+              src={flag}
+              className="w-8 hover:scale-95 hover:opacity-90 transition-all"
+              alt="langue en"
+              width={512}
+              height={512}
+            />
+          </Link>
+        </div>
         <BurgerMenu
           isOpen={isOpen}
           setIsOpen={setIsOpen}
           home_link={isEnglish ? "Home" : "Accueil"}
-          project_galery_link={isEnglish ? "Project galery" : "Galerie des projets"}
+          project_galery_link={
+            isEnglish ? "Project galery" : "Galerie des projets"
+          }
           findme_link={isEnglish ? "Where to find me" : "Où me retrouver"}
           contact_link={isEnglish ? "Contact me" : "Me contacter"}
         />
