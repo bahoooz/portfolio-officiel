@@ -26,7 +26,7 @@ export default function Navbar({ get_quote }: NavbarTypes) {
       >
         {get_quote}
       </Link>
-      <div className="flex gap-16">
+      <div className="flex gap-16 justify-between w-full md:w-fit">
         <div className="flex gap-4 items-center">
           <ThemeSwitcher />
           <Link href={linkHref} onClick={() => setIsOpen(false)}>
