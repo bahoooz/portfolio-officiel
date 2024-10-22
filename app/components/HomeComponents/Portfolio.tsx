@@ -32,6 +32,18 @@ export default function Portfolio({ text }: PortfolioTypes) {
               />
             </Link>
             <Link
+              href={"/portfolio/la_table_de_gustave"}
+              className="w-full h-[200px] bg-black flex justify-center items-center rounded-lg hover:scale-105 transition-all"
+            >
+              <Image
+                src={"/assets/table_gustave_logo.webp"}
+                alt="table gustave logo"
+                width={257}
+                height={87}
+                className="max-h-full w-32 object-cover"
+              />
+            </Link>
+            <Link
               href={"/portfolio/sunline_energie"}
               className="w-full h-[200px] bg-black flex justify-center items-center rounded-lg hover:scale-105 transition-all"
             >
@@ -40,18 +52,6 @@ export default function Portfolio({ text }: PortfolioTypes) {
                 alt="sunline logo"
                 width={257}
                 height={87}
-                className="max-h-full w-32 object-cover"
-              />
-            </Link>
-            <Link
-              href={"/portfolio/hydra_template"}
-              className="w-full h-[200px] bg-black flex justify-center items-center rounded-lg hover:scale-105 transition-all"
-            >
-              <Image
-                src={"/assets/hydra_logo.png"}
-                alt="hydra logo"
-                width={1020}
-                height={888}
                 className="max-h-full w-32 object-cover"
               />
             </Link>
