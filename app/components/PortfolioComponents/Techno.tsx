@@ -27,6 +27,8 @@ export default function Techno({ name }: { name: string }) {
         return "/assets/technos_icon/css_icon.png";
       case "Javascript":
         return "/assets/technos_icon/js_icon.png";
+      case "Framer Motion":
+        return "/assets/technos_icon/framer_motion_icon.png";
       default:
         return "";
     }

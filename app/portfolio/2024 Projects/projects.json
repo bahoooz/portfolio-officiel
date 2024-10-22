@@ -1,5 +1,16 @@
 {
   "project_1": {
+    "title": "La Table de Gustave",
+    "link": "la_table_de_gustave",
+    "img_primary": "/assets/table_gustave_logo.webp",
+    "width_img": 1024,
+    "height_img": 1024,
+    "color_bg": "#1E1E1E",
+    "description": "La Table de Gustave est un concept fictif d'un site pour un restaurant gastronomique parisien. Ce projet présente un design raffiné, mettant en avant une expérience culinaire française authentique. Le site propose une interface fluide pour explorer le menu, découvrir les événements spéciaux et l’histoire du restaurant. Tous les médias visuels et les contenus textuels ont été générés par l'intelligence artificielle, soulignant la polyvalence et la créativité dans la conception de ce projet.",
+    "technos": ["Nextjs", "React", "Framer Motion", "Tailwind"],
+    "website_link": "https://la-table-de-gustave.vercel.app"
+  },
+  "project_2": {
     "title": "Sunline Energie",
     "link": "sunline_energie",
     "img_primary": "/assets/sunline_logo.png",
@@ -10,7 +21,7 @@
     "technos": ["Nextjs", "React", "Tailwind"],
     "website_link": "https://www.sunline-energie.fr/"
   },
-  "project_2": {
+  "project_3": {
     "title": "Garry's Mod Creators",
     "link": "gmc",
     "img_primary": "/assets/gmc_logo.png",
@@ -18,10 +29,10 @@
     "height_img": 87,
     "color_bg": "#000",
     "description": "Garry's Mod Creators est une plateforme dédiée à ceux qui souhaitent créer leur propre serveur Garry's Mod. Une équipe qualifiée propose des services variés dans des domaines tels que la configuration, le développement, le mapping, le graphisme etc. Grâce à une interface intuitive et des solutions de paiement sécurisées avec Stripe, cette plateforme permet à nos clients de créer facilement leur serveur à des prix très intéressants.",
-    "technos": ["Nextjs", "React", "NextAuth", "Stripe", "Tailwind"],
+    "technos": ["Nextjs", "React", "NextAuth", "Stripe", "Framer Motion", "Tailwind"],
     "website_link": "https://gmod-creators.com/"
   },
-  "project_3": {
+  "project_4": {
     "title": "Blog Perso",
     "link": "blog_perso",
     "img_primary": "/assets/bahoz_logo.jpg",
@@ -32,7 +43,7 @@
     "technos": ["React", "Tailwind", "Nodejs", "Expressjs", "MongoDB"],
     "website_link": "https://mern-blog-nfas.onrender.com/"
   },
-  "project_4": {
+  "project_5": {
     "title": "Hydra Template",
     "link": "hydra_template",
     "img_primary": "/assets/hydra_logo.png",
