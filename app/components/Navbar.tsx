@@ -11,9 +11,12 @@ import { NavbarTypes } from "./types/typesComponents";
 
 export default function Navbar({ get_quote }: NavbarTypes) {
   const pathname = usePathname();
-  const linkHref = pathname === "/en" ? "/" : "/en";
-  const flag =
-    pathname === "/en" ? "/assets/flag_fr.png" : "/assets/flag_en.png";
+  const linkHref = pathname.startsWith("/en")
+    ? pathname.slice(3) || "/"
+    : "/en" + pathname;
+  const flag = pathname.startsWith("/en")
+    ? "/assets/flag_fr.png"
+    : "/assets/flag_en.png";
   const [isOpen, setIsOpen] = useState(false);
   const isEnglish = pathname.startsWith("/en");
 
@@ -21,7 +24,7 @@ export default function Navbar({ get_quote }: NavbarTypes) {
     <nav className="fixed h-14 z-20 top-5 w-full flex justify-between items-center px-10">
       <Link
         className="hidden md:block text-darkBrown dark:text-lightYellow hover:underline"
-        href={"/contact"}
+        href={isEnglish ? "/en/contact" : "/contact"}
         onClick={() => setIsOpen(false)}
       >
         {get_quote}
@@ -44,7 +47,7 @@ export default function Navbar({ get_quote }: NavbarTypes) {
           setIsOpen={setIsOpen}
           home_link={isEnglish ? "Home" : "Accueil"}
           project_galery_link={
-            isEnglish ? "Project galery" : "Galerie des projets"
+            isEnglish ? "Projects galery" : "Galerie des projets"
           }
           findme_link={isEnglish ? "Where to find me" : "Où me retrouver"}
           contact_link={isEnglish ? "Contact me" : "Me contacter"}

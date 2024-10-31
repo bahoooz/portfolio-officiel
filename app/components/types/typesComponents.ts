@@ -1,5 +1,7 @@
 // Global Types
 
+import { ReactElement } from "react";
+
 export type NavbarTypes = {
   get_quote: string;
 };
@@ -30,7 +32,7 @@ export type HeaderTypes = {
 
 export type AProposTypes = {
   title: string;
-  text: string;
+  text: ReactElement;
   btn: string;
 };
 

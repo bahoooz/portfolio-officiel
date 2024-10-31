@@ -32,6 +32,17 @@ export default function ClientLayout({
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         <link rel="icon" href="/assets/diamond_icon.png" />
         <link rel="apple-touch-icon" href="/assets/diamond_icon.png" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark')
+              } else {
+                document.documentElement.classList.remove('dark')
+              }
+            `,
+          }}
+        />
       </head>
       <body
         className={

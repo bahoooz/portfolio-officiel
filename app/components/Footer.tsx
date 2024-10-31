@@ -9,9 +9,11 @@ import { FooterTypes } from "./types/typesComponents";
 
 export default function Footer({ home_link, find_me_link }: FooterTypes) {
   const pathname = usePathname();
+  const isEnglish = pathname.startsWith("/en");
+  const linkPrefix = isEnglish ? "/en" : "";
   const linkHref = pathname === "/en" ? "/" : "/en";
-  const flag =
-    pathname === "/en" ? "/assets/flag_fr.png" : "/assets/flag_en.png";
+  const flag = pathname === "/en" ? "/assets/flag_fr.png" : "/assets/flag_en.png";
+
   return (
     <footer className="bg-lightYellow dark:bg-bgFooter relative overflow-hidden py-24 md:py-36">
       <Image
@@ -32,22 +34,22 @@ export default function Footer({ home_link, find_me_link }: FooterTypes) {
         <div className="flex w-[302px] sm:w-[404px] md:w-[431px] lg:w-[845px] xl:w-[976px] 2xl:w-[1128px] gap-14">
           <ul className="flex flex-col gap-6  text-lightBrown dark:text-darkYellow">
             <li>
-              <Link href={"/"} className="hover:underline">
+              <Link href={`${linkPrefix}/`} className="hover:underline">
                 {home_link}
               </Link>
             </li>
             <li>
-              <Link href={"/portfolio"} className="hover:underline">
+              <Link href={`${linkPrefix}/portfolio`} className="hover:underline">
                 Portfolio
               </Link>
             </li>
             <li>
-              <Link href={"/parcours"} className="hover:underline">
+              <Link href={`${linkPrefix}/parcours`} className="hover:underline">
                 {find_me_link}
               </Link>
             </li>
             <li>
-              <Link href={"/contact"} className="hover:underline">
+              <Link href={`${linkPrefix}/contact`} className="hover:underline">
                 Contact
               </Link>
             </li>
@@ -82,7 +84,7 @@ export default function Footer({ home_link, find_me_link }: FooterTypes) {
               </Link>
             </li>
             <li>
-              <Link href={"/contact"} className="hover:underline">
+              <Link href={`${linkPrefix}/contact`} className="hover:underline">
                 Mail
               </Link>
             </li>

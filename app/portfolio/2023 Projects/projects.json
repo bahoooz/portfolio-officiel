@@ -1,12 +1,14 @@
 {
   "project_1": {
     "title": "Ancien Portfolio",
+    "enTitle": "Old Portfolio",
     "link": "ancien_portfolio",
     "img_primary": "/assets/ancien_portfolio_logo.png",
     "width_img": 2000,
     "height_img": 2000,
     "color_bg": "#000",
     "description": "Mon ancien portfolio, réalisé avec React, présente mes projets et compétences en développement web. Il s'agit d'une vitrine simple et efficace, mettant en avant mes travaux dans un style épuré et moderne, tout en utilisant des technologies basiques comme HTML, CSS, JavaScript et React. Ce portfolio m’a permis de renforcer mes compétences en design web et développement front-end et surtout de partager mes projets.",
+    "enDescription": "My old portfolio, made with React, presents my projects and skills in web development. It is a simple and efficient showcase, highlighting my work in a clean and modern style, while using basic technologies such as HTML, CSS, JavaScript and React. This portfolio has allowed me to strengthen my skills in web design and front-end development, and above all to share my projects.",
     "technos": ["React", "HTML", "CSS", "Javascript"],
     "website_link": "https://bahoz-dev.netlify.app/"
   },
@@ -18,17 +20,20 @@
     "height_img": 200,
     "color_bg": "#FFF3DD",
     "description": "UTF France est la landing page d'une application web réalisée dans le cadre d'un stage chez l'Union Technique Française (UTF). Ce projet avait pour but de développer une plateforme de recrutement en ressources humaines, permettant à UTF de gérer les candidatures et d'améliorer leur processus de recrutement. La page d'accueil présente l'application et ses fonctionnalités, mettant en avant les services RH proposés par UTF.",
+    "enDescription": "UTF France is the landing page of a web application developed as part of an internship at the French Technical Union (UTF). This project aimed to develop a recruitment platform in human resources, allowing UTF to manage applications and improve their recruitment process. The home page presents the application and its features, highlighting the HR services offered by UTF.",
     "technos": ["React", "HTML", "CSS", "Javascript"],
     "website_link": "https://utf-app.netlify.app/"
   },
   "project_3": {
     "title": "Projet \"Autres\"",
+    "enTitle": "Other Projects",
     "link": "projet_autres",
     "img_primary": "/assets/projet_autres_logo.png",
     "width_img": 2100,
     "height_img": 2100,
     "color_bg": "#fff",
     "description": "Ce projet regroupe plusieurs petits développements que j’ai réalisés pour tester des idées ou expérimenter avec des technologies. Il s’agit d’un ensemble d'exercices pratiques permettant d'explorer différentes approches de développement web sans avoir un objectif précis de produit fini. Un excellent exercice pour améliorer mes compétences en HTML, CSS et JavaScript.",
+    "enDescription": "This project includes several small developments that I have made to test ideas or experiment with technologies. It is a set of practical exercises allowing to explore different approaches to web development without having a specific goal of finished product. An excellent exercise to improve my skills in HTML, CSS and JavaScript.",
     "technos": ["React", "HTML", "CSS", "Javascript"],
     "website_link": "https://bahoooz.github.io/other-projects/"
   },
@@ -40,6 +45,7 @@
     "height_img": 2100,
     "color_bg": "#44AB5C",
     "description": "Ecobot est un projet conceptuel mettant en scène une intelligence artificielle fictive dédiée à la génération de contenu multimédia sur des sujets liés à l'écologie. L'objectif est de sensibiliser les utilisateurs aux enjeux environnementaux grâce à des recommandations interactives et dynamiques. Ce projet explore l'usage d'IA dans un contexte fictif pour créer une interface ludique tout en éduquant sur les pratiques écologiques.",
+    "enDescription": "Ecobot is a conceptual project featuring a fictional artificial intelligence dedicated to generating multimedia content on environmental issues. The goal is to raise awareness of environmental issues through interactive and dynamic recommendations. This project explores the use of AI in a fictional context to create a fun interface while educating on ecological practices.",
     "technos": ["HTML", "CSS", "Javascript"],
     "website_link": "https://eco-bot-web.glitch.me/"
   }

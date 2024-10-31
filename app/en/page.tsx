@@ -21,7 +21,26 @@ export default function HomeEn() {
       />
       <APropos
         title="About me"
-        text="Young web developer with 1-2 years of experience introduced to web development through the “La Toile” training at Emlyon business school, 4th best French business school. Self-taught at home by following numerous tutorials on the internet, I was able to carry out numerous personal projects and also by starting freelancing with Fiverr I was able to get my first clients and work on more concrete projects."
+        text={
+          <>
+            Young web developer with{" "}
+            <span className="text-lightBrown dark:text-darkYellow">
+              1-2 years of experience
+            </span>{" "}
+            introduced to web development through the “La Toile” training at{" "}
+            <span className="text-lightBrown dark:text-darkYellow">
+              Emlyon business school
+            </span>
+            , 4th best French business school. Self-taught at home by following
+            numerous tutorials on the internet, I was able to carry out numerous
+            personal projects and also by starting{" "}
+            <span className="text-lightBrown dark:text-darkYellow">
+              freelancing with Fiverr{" "}
+            </span>
+            I was able to get my first clients and work on more concrete
+            projects.
+          </>
+        }
         btn="Download my CV"
       />
       <Portfolio text="See all projects" />

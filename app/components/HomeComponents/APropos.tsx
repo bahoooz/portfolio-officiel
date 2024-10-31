@@ -22,23 +22,6 @@ export default function APropos({ title, text, btn }: AProposTypes) {
               {title}
             </h2>
             <p className="mb-7 leading-8">
-              {/* Jeune développeur web avec{" "}
-              <span className="text-lightBrown dark:text-darkYellow">
-                1-2 ans d’expérience
-              </span>{" "}
-              initié au développement web par la formation “La Toile” de{" "}
-              <span className="text-lightBrown dark:text-darkYellow">
-                l’emlyon business school
-              </span>{" "}
-              4ème meilleure école de commerce française. Formé en autodidacte à
-              la maison en suivant de nombreux tutoriels sur internet j’ai pu
-              réaliser de nombreux projets personnels et également en commençant
-              le{" "}
-              <span className="text-lightBrown dark:text-darkYellow">
-                freelancing avec Fiverr
-              </span>{" "}
-              j’ai pu me faire mes premiers clients et travailler sur des
-              projets plus concrêts. */}
               {text}
             </p>
             <Link href={"/CV Julien.pdf"} target="_blank">

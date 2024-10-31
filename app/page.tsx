@@ -15,7 +15,27 @@ export default function Home() {
       />
       <APropos
         title="À propos de moi"
-        text="Jeune développeur web avec 1-2 ans d’expérience initié au développement web par la formation “La Toile” de l’emlyon business school 4ème meilleure école de commerce française. Formé en autodidacte à la maison en suivant de nombreux tutoriels sur internet j’ai pu réaliser de nombreux projets personnels et également en commençant le freelancing avec Fiverr j’ai pu me faire mes premiers clients et travailler sur des projets plus concrêts."
+        text={
+          <>
+            Jeune développeur web avec{" "}
+            <span className="text-lightBrown dark:text-darkYellow">
+              1-2 ans d&apos;expérience
+            </span>{" "}
+            initié au développement web par la formation &quot;La Toile&quot; de{" "}
+            <span className="text-lightBrown dark:text-darkYellow">
+              l&apos;emlyon business school
+            </span>{" "}
+            4ème meilleure école de commerce française. Formé en autodidacte à
+            la maison en suivant de nombreux tutoriels sur internet j&apos;ai pu
+            réaliser de nombreux projets personnels et également en commençant
+            le{" "}
+            <span className="text-lightBrown dark:text-darkYellow">
+              freelancing avec Fiverr
+            </span>{" "}
+            j&apos;ai pu me faire mes premiers clients et travailler sur des
+            projets plus concrêts.
+          </>
+        }
         btn="Télécharger mon CV"
       />
       <Portfolio text="Voir tous les projets" />

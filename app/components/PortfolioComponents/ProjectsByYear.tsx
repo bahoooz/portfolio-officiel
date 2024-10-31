@@ -8,10 +8,13 @@ import { Projects } from "@/app/portfolio/types/typesProject";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 export default function ProjectsByYear({ year }: { year: number }) {
   const typedProjects2024: Projects = projects2024;
   const typedProjects2023: Projects = projects2023;
+  const pathname = usePathname();
+  const isEnglish = pathname.startsWith("/en");
 
   return (
     <div>
@@ -29,7 +32,7 @@ export default function ProjectsByYear({ year }: { year: number }) {
             {Object.keys(typedProjects2024).map((key: string) => (
               <div key={key} className="hover:scale-105 transition-all">
                 <Link
-                  href={`/portfolio/${
+                  href={`${isEnglish ? "/en" : ""}/portfolio/${
                     (typedProjects2024[key] as Project).link
                   }`}
                 >
@@ -47,7 +50,9 @@ export default function ProjectsByYear({ year }: { year: number }) {
                   </div>
                 </Link>
                 <h3 className="text-center mt-5 font-medium text-darkBrown dark:text-darkYellow xl:text-lg">
-                  {(typedProjects2024[key] as Project).title}
+                  {isEnglish && typedProjects2024[key].enTitle
+                    ? typedProjects2024[key].enTitle
+                    : typedProjects2024[key].title}
                 </h3>
               </div>
             ))}
@@ -67,7 +72,7 @@ export default function ProjectsByYear({ year }: { year: number }) {
             {Object.keys(typedProjects2023).map((key: string) => (
               <div key={key} className="hover:scale-105 transition-all">
                 <Link
-                  href={`/portfolio/${
+                  href={`${isEnglish ? "/en" : ""}/portfolio/${
                     (typedProjects2023[key] as Project).link
                   }`}
                 >
@@ -85,7 +90,9 @@ export default function ProjectsByYear({ year }: { year: number }) {
                   </div>
                 </Link>
                 <h3 className="text-center mt-5 font-medium text-darkBrown dark:text-darkYellow xl:text-lg">
-                  {(typedProjects2023[key] as Project).title}
+                  {isEnglish && typedProjects2023[key].enTitle
+                    ? typedProjects2023[key].enTitle
+                    : typedProjects2023[key].title}
                 </h3>
               </div>
             ))}

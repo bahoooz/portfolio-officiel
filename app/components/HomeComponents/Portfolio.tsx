@@ -5,8 +5,13 @@ import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import { PortfolioTypes } from "../types/typesComponents";
+import { usePathname } from "next/navigation";
 
 export default function Portfolio({ text }: PortfolioTypes) {
+  const pathname = usePathname();
+  const isEnglish = pathname.startsWith("/en");
+  const portfolioLink = isEnglish ? "/en/portfolio" : "/portfolio";
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.7 }}
@@ -20,7 +25,7 @@ export default function Portfolio({ text }: PortfolioTypes) {
           </h2>
           <div className="flex flex-col items-center gap-8 lg:flex-row">
             <Link
-              href={"/portfolio/gmc"}
+              href={isEnglish ? "/en/portfolio/gmc" : "/portfolio/gmc"}
               className="w-full h-[200px] bg-black flex justify-center items-center rounded-lg hover:scale-105 transition-all"
             >
               <Image
@@ -32,7 +37,11 @@ export default function Portfolio({ text }: PortfolioTypes) {
               />
             </Link>
             <Link
-              href={"/portfolio/la_table_de_gustave"}
+              href={
+                isEnglish
+                  ? "/en/portfolio/la_table_de_gustave"
+                  : "/portfolio/la_table_de_gustave"
+              }
               className="w-full h-[200px] bg-black flex justify-center items-center rounded-lg hover:scale-105 transition-all"
             >
               <Image
@@ -44,7 +53,11 @@ export default function Portfolio({ text }: PortfolioTypes) {
               />
             </Link>
             <Link
-              href={"/portfolio/sunline_energie"}
+              href={
+                isEnglish
+                  ? "/en/portfolio/sunline_energie"
+                  : "/portfolio/sunline_energie"
+              }
               className="w-full h-[200px] bg-black flex justify-center items-center rounded-lg hover:scale-105 transition-all"
             >
               <Image
@@ -59,7 +72,7 @@ export default function Portfolio({ text }: PortfolioTypes) {
           <div className="flex justify-center">
             <Link
               className="flex justify-center mt-8 text-lightBrown dark:text-darkYellow underline hover:scale-95 transition-all hover:opacity-85 w-fit"
-              href={"/portfolio"}
+              href={portfolioLink}
             >
               {text}
             </Link>

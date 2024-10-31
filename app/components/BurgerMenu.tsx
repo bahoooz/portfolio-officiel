@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BurgerMenuTypes } from "./types/typesComponents";
+import { usePathname } from "next/navigation";
 
 export default function BurgerMenu({
   isOpen,
@@ -14,6 +15,10 @@ export default function BurgerMenu({
   findme_link,
   contact_link,
 }: BurgerMenuTypes) {
+  const pathname = usePathname();
+  const isEnglish = pathname.startsWith("/en");
+  const linkPrefix = isEnglish ? "/en" : "";
+
   return (
     <div>
       <div onClick={() => setIsOpen(!isOpen)}>
@@ -38,7 +43,7 @@ export default function BurgerMenu({
           <li>
             <Link
               onClick={() => setIsOpen(false)}
-              href={"/"}
+              href={`${linkPrefix}/`}
               className="link relative text-2xl font-light dark:text-darkYellow text-black"
             >
               {home_link}
@@ -47,7 +52,7 @@ export default function BurgerMenu({
           <li>
             <Link
               onClick={() => setIsOpen(false)}
-              href={"/portfolio"}
+              href={`${linkPrefix}/portfolio`}
               className="link relative text-2xl font-light dark:text-darkYellow text-black"
             >
               {project_galery_link}
@@ -56,7 +61,7 @@ export default function BurgerMenu({
           <li>
             <Link
               onClick={() => setIsOpen(false)}
-              href={"/parcours"}
+              href={`${linkPrefix}/parcours`}
               className="link relative text-2xl font-light dark:text-darkYellow text-black"
             >
               {findme_link}
@@ -65,7 +70,7 @@ export default function BurgerMenu({
           <li>
             <Link
               onClick={() => setIsOpen(false)}
-              href={"/contact"}
+              href={`${linkPrefix}/contact`}
               className="link relative text-2xl font-light dark:text-darkYellow text-black"
             >
               {contact_link}

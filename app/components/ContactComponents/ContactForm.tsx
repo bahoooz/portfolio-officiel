@@ -6,36 +6,45 @@ import React, { useRef, useState } from "react";
 import { z } from "zod";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
 const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
 const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
 
-const schema = z.object({
-  email: z.string().email({ message: "Veuillez entrer un email valide." }),
-  lastname: z
-    .string()
-    .optional()
-    .refine((val) => /^[A-Za-zÀ-ÖØ-öø-ÿ\s]*$/.test(val as any), {
-      message: "Le nom de famille ne doit pas contenir de chiffres.",
-    }),
-  firstname: z
-    .string()
-    .optional()
-    .refine((val) => /^[A-Za-zÀ-ÖØ-öø-ÿ\s]*$/.test(val as any), {
-      message: "Le prénom ne doit pas contenir de chiffres.",
-    }),
-  commentary: z
-    .string()
-    .min(10, { message: "Veuillez entrer au moins 10 caractères." })
-    .max(3000, { message: "Veuillez ne pas dépasser 3000 caractères." }),
-});
-
 export default function ContactForm() {
+  const pathname = usePathname();
+  const isEnglish = pathname.startsWith("/en");
   const form = useRef<any>(null);
   const [errors, setErrors] = useState<any>({});
   const [commentaryLength, setCommentaryLength] = useState(0);
   const [endingMessage, setEndingMessage] = useState("");
+
+  const schema = z.object({
+    email: z.string().email({ 
+      message: isEnglish ? "Please enter a valid email." : "Veuillez entrer un email valide." 
+    }),
+    lastname: z
+      .string()
+      .optional()
+      .refine((val) => /^[A-Za-zÀ-ÖØ-öø-ÿ\s]*$/.test(val as any), {
+        message: isEnglish ? "Last name must not contain numbers." : "Le nom de famille ne doit pas contenir de chiffres.",
+      }),
+    firstname: z
+      .string()
+      .optional()
+      .refine((val) => /^[A-Za-zÀ-ÖØ-öø-ÿ\s]*$/.test(val as any), {
+        message: isEnglish ? "First name must not contain numbers." : "Le prénom ne doit pas contenir de chiffres.",
+      }),
+    commentary: z
+      .string()
+      .min(10, { 
+        message: isEnglish ? "Please enter at least 10 characters." : "Veuillez entrer au moins 10 caractères." 
+      })
+      .max(3000, { 
+        message: isEnglish ? "Please do not exceed 3000 characters." : "Veuillez ne pas dépasser 3000 caractères." 
+      }),
+  });
 
   const handleCommentaryChange = (
     e: React.ChangeEvent<HTMLTextAreaElement>
@@ -64,7 +73,9 @@ export default function ContactForm() {
         setCommentaryLength(0);
         window.scrollBy({ top: 250, behavior: "smooth" });
         setEndingMessage(
-          "Merci à vous d'avoir rempli le formulaire, une réponse vous sera communiqué sous 24h maximum 👍"
+          isEnglish
+            ? "Thank you for filling out the form, a response will be sent within 24 hours maximum 👍"
+            : "Merci à vous d'avoir rempli le formulaire, une réponse vous sera communiqué sous 24h maximum 👍"
         );
       },
       (error) => {
@@ -102,7 +113,7 @@ export default function ContactForm() {
         </div>
         <div className="flex flex-col">
           <label className="font-medium text-darkBrown dark:text-lightYellow">
-            nom
+            {isEnglish ? "last name" : "nom"}
           </label>
           <input
             name="lastname"
@@ -117,7 +128,7 @@ export default function ContactForm() {
         </div>
         <div className="flex flex-col">
           <label className="font-medium text-darkBrown dark:text-lightYellow">
-            prénom
+            {isEnglish ? "first name" : "prénom"}
           </label>
           <input
             name="firstname"
@@ -132,7 +143,7 @@ export default function ContactForm() {
         </div>
         <div className="flex flex-col relative">
           <label className="font-medium text-darkBrown dark:text-lightYellow">
-            commentaire *
+            {isEnglish ? "commentary" : "commentaire"} *
           </label>
           <textarea
             name="commentary"
@@ -146,7 +157,7 @@ export default function ContactForm() {
             </span>
           )}
           <p className="absolute -bottom-7 right-0 text-sm font-light text-darkBrown dark:text-lightYellow">
-            {commentaryLength}/3000
+            {commentaryLength} / 3000
           </p>
         </div>
       </div>
