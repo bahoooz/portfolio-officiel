@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Accueil - Portfolio Bahoz",
     description:
-      "Découvrez le portfolio de Bahoz, un développeur web parisien de 18 ans, et commencez à travailler ensemble sur vos projets.",
+      "Développeur web parisien de 18 ans, découvrez mon portfolio et travaillons ensemble !",
     images: ["/assets/icon_website.png"],
   },
   robots: {

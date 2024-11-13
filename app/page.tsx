@@ -1,8 +1,28 @@
+import { Metadata } from "next";
 import APropos from "./components/HomeComponents/APropos";
 import Header from "./components/HomeComponents/Header";
 import Portfolio from "./components/HomeComponents/Portfolio";
 import Skills from "./components/HomeComponents/Skills";
 
+export const metadata: Metadata = {
+  title: "Accueil - Portfolio Bahoz",
+  description:
+    "Développeur web parisien de 18 ans, découvrez mon portfolio et travaillons ensemble !",
+  openGraph: {
+    title: "Accueil - Portfolio Bahoz",
+    description:
+      "Développeur web parisien de 18 ans, découvrez mon portfolio et travaillons ensemble !",
+    url: "https://www.bahoz-dev.com",
+    images: [
+      {
+        url: "/assets/icon_website.png",
+        width: 1024,
+        height: 1024,
+        alt: "Page d'accueil de Bahoz",
+      },
+    ],
+  },
+};
 export default function Home() {
   return (
     <div className="overflow-x-hidden">
