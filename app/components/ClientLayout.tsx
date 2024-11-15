@@ -28,10 +28,10 @@ export default function ClientLayout({
           property="og:description"
           content="Développeur web parisien de 18 ans, découvrez mon portfolio et travaillons ensemble !"
         />
-        <meta name="twitter:image" content="/assets/diamond_icon.png" />
+        <meta name="twitter:image" content="/assets/logo-diamond.png" />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-        <link rel="icon" href="/assets/diamond_icon.png" />
-        <link rel="apple-touch-icon" href="/assets/diamond_icon.png" />
+        <link rel="icon" href="/assets/icon_website.png" />
+        <link rel="apple-touch-icon" href="/assets/icon_website.png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
