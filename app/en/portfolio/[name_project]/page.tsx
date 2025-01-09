@@ -10,10 +10,12 @@ import Link from "next/link";
 import { ArrowCircleLeft } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
 import { Project } from "@/app/portfolio/types/typesProject";
+import projects2025 from "@/app/portfolio/2025 Projects/projects.json";
 
 const projects = [
   ...Object.values(projects2023),
   ...Object.values(projects2024),
+  ...Object.values(projects2025),
 ];
 
 export default function ProjectPageEn() {

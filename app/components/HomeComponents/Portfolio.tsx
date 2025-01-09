@@ -25,6 +25,22 @@ export default function Portfolio({ text }: PortfolioTypes) {
           </h2>
           <div className="flex flex-col items-center gap-8 lg:flex-row">
             <Link
+              href={
+                isEnglish
+                  ? "/en/portfolio/melovibs"
+                  : "/portfolio/melovibs"
+              }
+              className="w-full h-[200px] bg-black flex justify-center items-center rounded-lg hover:scale-105 transition-all"
+            >
+              <Image
+                src={"/assets/melovibs_logo.png"}
+                alt="melovibs logo"
+                width={1024}
+                height={1024}
+                className="max-h-full w-28 object-cover"
+              />
+            </Link>
+            <Link
               href={isEnglish ? "/en/portfolio/gmc" : "/portfolio/gmc"}
               className="w-full h-[200px] bg-black flex justify-center items-center rounded-lg hover:scale-105 transition-all"
             >
@@ -49,23 +65,7 @@ export default function Portfolio({ text }: PortfolioTypes) {
                 alt="table gustave logo"
                 width={257}
                 height={87}
-                className="max-h-full w-32 object-cover"
-              />
-            </Link>
-            <Link
-              href={
-                isEnglish
-                  ? "/en/portfolio/sunline_energie"
-                  : "/portfolio/sunline_energie"
-              }
-              className="w-full h-[200px] bg-black flex justify-center items-center rounded-lg hover:scale-105 transition-all"
-            >
-              <Image
-                src={"/assets/sunline_logo.png"}
-                alt="sunline logo"
-                width={257}
-                height={87}
-                className="max-h-full w-32 object-cover"
+                className="max-h-full w-28 object-cover"
               />
             </Link>
           </div>

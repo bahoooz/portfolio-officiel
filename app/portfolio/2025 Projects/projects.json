@@ -1,0 +1,15 @@
+{
+  "project_1": {
+    "title": "MeloVib's",
+    "enTitle": "MeloVib's",
+    "link": "melovibs",
+    "img_primary": "/assets/melovibs_logo.png",
+    "width_img": 1024,
+    "height_img": 1024,
+    "color_bg": "#27263C",
+    "description": "MeloVib's est une plateforme musicale destinée aux fans de musique qui vous permet de voter pour vos morceaux préférés. Découvrez et votez pour vos morceaux préférés dans différents genres musicaux. Suivez les classements évolutifs et découvrez les tendances qui font vibrer la communauté. À vous de propulser vos artistes favoris au sommet et de participer à cette aventure musicale avec des votes qui soutiennent vos artistes préférés.",
+    "enDescription": "MeloVib's is a music platform for music fans that allows you to vote for your favorite tracks. Discover and vote for your favorite tracks in different musical genres. Follow the evolving rankings and discover the trends that make the community vibrate. It's up to you to propel your favorite artists to the top and participate in this musical adventure with votes that support your favorite artists.",
+    "technos": ["Nextjs", "React", "Tailwind", "NextAuth", "MongoDB", "Typescript"],
+    "website_link": "https://www.melovibs.com"
+  }
+}

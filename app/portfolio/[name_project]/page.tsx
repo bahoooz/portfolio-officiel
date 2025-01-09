@@ -9,10 +9,11 @@ import Techno from "@/app/components/PortfolioComponents/Techno";
 import Link from "next/link";
 import { ArrowCircleLeft } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
-
+import projects2025 from "@/app/portfolio/2025 Projects/projects.json";
 const projects = [
   ...Object.values(projects2023),
   ...Object.values(projects2024),
+  ...Object.values(projects2025),
 ];
 
 export default function ProjectPage() {
