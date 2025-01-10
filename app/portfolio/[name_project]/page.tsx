@@ -51,6 +51,7 @@ export default function ProjectPage() {
             height={project.height_img}
             alt={project.title}
             className="xl:max-w-80"
+            unoptimized={true}
           />
         </motion.div>
         <div className="w-[302px] sm:w-[404px] md:w-[431px] flex flex-col lg:items-start gap-8">
@@ -75,6 +76,7 @@ export default function ProjectPage() {
               height={project.height_img}
               alt={project.title}
               className="max-w-64"
+              unoptimized={true}
             />
           </motion.div>
           <motion.p
