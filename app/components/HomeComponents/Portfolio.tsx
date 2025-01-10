@@ -38,6 +38,7 @@ export default function Portfolio({ text }: PortfolioTypes) {
                 width={1024}
                 height={1024}
                 className="max-h-full w-28 object-cover"
+                unoptimized={true}
               />
             </Link>
             <Link
@@ -50,6 +51,7 @@ export default function Portfolio({ text }: PortfolioTypes) {
                 width={2000}
                 height={2000}
                 className="max-h-full w-32 object-cover"
+                unoptimized={true}
               />
             </Link>
             <Link
@@ -66,6 +68,7 @@ export default function Portfolio({ text }: PortfolioTypes) {
                 width={257}
                 height={87}
                 className="max-h-full w-28 object-cover"
+                unoptimized={true}
               />
             </Link>
           </div>

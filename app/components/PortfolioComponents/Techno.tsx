@@ -44,6 +44,7 @@ export default function Techno({ name }: { name: string }) {
         height={27}
         alt={`${name} logo`}
         className="w-auto h-5"
+        unoptimized={true}
       />
       <p className="text-white dark:text-lightYellow">{name}</p>
     </div>

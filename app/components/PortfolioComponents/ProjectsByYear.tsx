@@ -48,6 +48,7 @@ export default function ProjectsByYear({ year }: { year: number }) {
                       height={typedProjects2025[key].height_img}
                       alt={typedProjects2025[key].title}
                       className="w-32 lg:w-40 object-cover"
+                      unoptimized={true}
                     />
                   </div>
                 </Link>
@@ -88,6 +89,7 @@ export default function ProjectsByYear({ year }: { year: number }) {
                       height={typedProjects2024[key].height_img}
                       alt={typedProjects2024[key].title}
                       className="w-32 lg:w-40 object-cover"
+                      unoptimized={true}
                     />
                   </div>
                 </Link>
@@ -128,6 +130,7 @@ export default function ProjectsByYear({ year }: { year: number }) {
                       height={typedProjects2023[key].height_img}
                       alt={typedProjects2023[key].title}
                       className="w-32 lg:w-40 object-cover"
+                      unoptimized={true}
                     />
                   </div>
                 </Link>
