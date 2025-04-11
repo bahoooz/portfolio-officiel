@@ -107,7 +107,7 @@ export default function Footer({ home_link, find_me_link }: FooterTypes) {
       </div>
       <div className="flex justify-center md:mr-11 md:items-center md:mt-16 md:gap-11 md:absolute md:right-0">
         <p className="w-[302px] sm:w-[404px] md:w-fit">
-          © Copyright 2024 - Julien Brault--Chérif
+          © Copyright 2025 - Julien Brault--Chérif
         </p>
         <div className="hidden md:gap-6 md:flex">
           <ThemeSwitcher />

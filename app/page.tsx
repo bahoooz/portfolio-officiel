@@ -28,7 +28,7 @@ export default function Home() {
     <div className="overflow-x-hidden">
       <Header
         title="Développeur Web à Paris"
-        age="18 ans"
+        age="19 ans"
         citation="Notre vie est ce qu'en font nos pensées."
         author="Marc Aurèle"
         discover_the_rest="Découvrir la suite"

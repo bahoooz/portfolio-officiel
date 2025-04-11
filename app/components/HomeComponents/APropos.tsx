@@ -24,7 +24,7 @@ export default function APropos({ title, text, btn }: AProposTypes) {
             <p className="mb-7 leading-8">
               {text}
             </p>
-            <Link href={"/CV Julien.pdf"} target="_blank">
+            <Link href={"/CV Julien 2025.pdf"} target="_blank">
               <button className="bg-lightBrown dark:bg-darkYellow dark:text-bgColor px-7 py-3 rounded-xl text-sm text-white hover:bg-opacity-75 dark:hover:bg-opacity-75 transition-all">
                 {btn}
               </button>

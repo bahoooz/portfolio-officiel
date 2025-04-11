@@ -136,6 +136,15 @@ export default function Skills({ title, autres_title }: MesSkillsTypes) {
                   target="_blank"
                   className="hover:underline"
                 >
+                  nextjs backend
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={"https://nodejs.org/fr"}
+                  target="_blank"
+                  className="hover:underline"
+                >
                   nodejs
                 </Link>
               </li>
@@ -157,18 +166,13 @@ export default function Skills({ title, autres_title }: MesSkillsTypes) {
                   mongodb
                 </Link>
               </li>
-            </ul>
-          </div>
-          <div className="flex flex-col gap-9">
-            <p className="dark:text-darkYellow text-darkBrown">cms</p>
-            <ul className="flex flex-col gap-3">
               <li>
                 <Link
-                  href={"https://strapi.io/"}
+                  href={"https://supabase.com/"}
                   target="_blank"
                   className="hover:underline"
                 >
-                  strapi
+                  supabase
                 </Link>
               </li>
             </ul>
