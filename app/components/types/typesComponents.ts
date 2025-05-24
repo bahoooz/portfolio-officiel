@@ -24,7 +24,7 @@ export type BurgerMenuTypes = {
 
 export type HeaderTypes = {
   title: string;
-  age: string;
+  specialty: string;
   citation: string;
   author: string;
   discover_the_rest: string;
@@ -43,4 +43,17 @@ export type PortfolioTypes = {
 export type MesSkillsTypes = {
   title: string;
   autres_title: string;
+};
+
+export type AvisClientsTypes = {
+  title: string;
+  text: string;
+};
+
+export type CardAvisClientTypes = {
+  name: string;
+  commentary_fr: string;
+  commentary_en: string;
+  stars: number;
+  release_date: string;
 };

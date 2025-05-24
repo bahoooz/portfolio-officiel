@@ -10,7 +10,7 @@ import { HeaderTypes } from "../types/typesComponents";
 
 export default function Header({
   title,
-  age,
+  specialty,
   citation,
   author,
   discover_the_rest,
@@ -47,10 +47,10 @@ export default function Header({
               {title}
             </h1>
             <h2 className="dark:text-lightYellow text-lightBrown font-bold text-xl sm:text-2xl md:text-3xl xl:text-4xl">
-              Julien Brault--Chérif
+              Julien Brault Chérif
             </h2>
             <h3 className="dark:text-darkYellow text-darkBrown font-bold text-xl sm:text-2xl md:text-3xl">
-              {age}
+              {specialty}
             </h3>
           </div>
           <p className="my-10 md:my-16 lg:my-32 lg:mb-0 dark:font-extralight font-light dark:text-white text-black">
