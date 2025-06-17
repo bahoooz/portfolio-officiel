@@ -9,7 +9,20 @@
     "color_bg": "#27263C",
     "description": "MeloVib's est une plateforme musicale destinée aux fans de musique qui vous permet de voter pour vos morceaux préférés. Découvrez et votez pour vos morceaux préférés dans différents genres musicaux. Suivez les classements évolutifs et découvrez les tendances qui font vibrer la communauté. À vous de propulser vos artistes favoris au sommet et de participer à cette aventure musicale avec des votes qui soutiennent vos artistes préférés.",
     "enDescription": "MeloVib's is a music platform for music fans that allows you to vote for your favorite tracks. Discover and vote for your favorite tracks in different musical genres. Follow the evolving rankings and discover the trends that make the community vibrate. It's up to you to propel your favorite artists to the top and participate in this musical adventure with votes that support your favorite artists.",
-    "technos": ["Nextjs", "React", "Tailwind", "NextAuth", "MongoDB", "Typescript"],
+    "technos": ["Nextjs", "React", "TailwindCSS", "NextAuth", "MongoDB", "Typescript"],
     "website_link": "https://www.melovibs.com"
+  },
+  "project_2": {
+    "title": "My Genius Recipe",
+    "enTitle": "My Genius Recipe",
+    "link": "mgr",
+    "img_primary": "/assets/mgr_logo.png",
+    "width_img": 1024,
+    "height_img": 1024,
+    "color_bg": "#f5dfbb",
+    "description": "My Genius Recipe est une application web (SaaS avec ambition d'application mobile) qui permet de créer des recettes de cuisine avec n'importe quel ingrédient, ultra intuitive et user friendly, entièrement géré par l'IA. L'application permet d'ajouter des ingrédients, d'appliquer des filtres (recette sucrée / salée, recette avec photo, recette originale ou classique, etc..) avec possibilité de les sauvegarder. Optant pour un modèle freemium et répondant à un besoin, l'application est actuellement en phase de MVP (minimum viable product).",
+    "enDescription": "My Genius Recipe is a web application (SaaS with ambition of mobile application) that allows you to create recipes with any ingredient, ultra intuitive and user friendly, entirely managed by the AI. The application allows you to add ingredients, apply filters (sweet / savory recipe, recipe with photo, original or classic recipe, etc..) with the possibility to save them. Opting for a freemium model and responding to a need, the application is currently in the MVP phase (minimum viable product).",
+    "technos": ["Nextjs", "React", "Supabase", "TailwindCSS", "Typescript", "Stripe", "OpenAI"],
+    "website_link": "https://www.mygeniusrecipe.com"
   }
 }

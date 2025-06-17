@@ -11,7 +11,7 @@ export default function Techno({ name }: { name: string }) {
         return "/assets/technos_icon/nextauth_icon.png";
       case "Stripe":
         return "/assets/technos_icon/stripe_icon.png";
-      case "Tailwind":
+      case "TailwindCSS":
         return "/assets/technos_icon/tailwind_icon.png";
       case "React":
         return "/assets/technos_icon/react_icon.png";
@@ -31,6 +31,10 @@ export default function Techno({ name }: { name: string }) {
         return "/assets/technos_icon/ts_icon.png";
       case "Framer Motion":
         return "/assets/technos_icon/framer_motion_icon.png";
+      case "Supabase":
+        return "/assets/technos_icon/supabase_icon.png";
+      case "OpenAI":
+        return "/assets/technos_icon/chatgpt_icon.png";
       default:
         return "";
     }

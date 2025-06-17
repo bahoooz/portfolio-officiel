@@ -27,10 +27,27 @@ export default function Portfolio({ text }: PortfolioTypes) {
             <Link
               href={
                 isEnglish
+                  ? "/en/portfolio/mgr"
+                  : "/portfolio/mgr"
+              }
+              className="w-full h-[200px] bg-[#f5dfbb] flex justify-center items-center rounded-lg hover:scale-105 transition-all"
+            >
+              <Image
+                src={"/assets/mgr_logo.png"}
+                alt="mgr logo"
+                width={1024}
+                height={1024}
+                className="max-h-full w-32 object-cover"
+                unoptimized={true}
+              />
+            </Link>
+            <Link
+              href={
+                isEnglish
                   ? "/en/portfolio/melovibs"
                   : "/portfolio/melovibs"
               }
-              className="w-full h-[200px] bg-black flex justify-center items-center rounded-lg hover:scale-105 transition-all"
+              className="w-full h-[200px] bg-[#27263C] flex justify-center items-center rounded-lg hover:scale-105 transition-all"
             >
               <Image
                 src={"/assets/melovibs_logo.png"}
@@ -43,7 +60,7 @@ export default function Portfolio({ text }: PortfolioTypes) {
             </Link>
             <Link
               href={isEnglish ? "/en/portfolio/gmc" : "/portfolio/gmc"}
-              className="w-full h-[200px] bg-black flex justify-center items-center rounded-lg hover:scale-105 transition-all"
+              className="w-full h-[200px] bg-[#000] flex justify-center items-center rounded-lg hover:scale-105 transition-all"
             >
               <Image
                 src={"/assets/gmc_logo.png"}
@@ -51,23 +68,6 @@ export default function Portfolio({ text }: PortfolioTypes) {
                 width={2000}
                 height={2000}
                 className="max-h-full w-32 object-cover"
-                unoptimized={true}
-              />
-            </Link>
-            <Link
-              href={
-                isEnglish
-                  ? "/en/portfolio/la_table_de_gustave"
-                  : "/portfolio/la_table_de_gustave"
-              }
-              className="w-full h-[200px] bg-black flex justify-center items-center rounded-lg hover:scale-105 transition-all"
-            >
-              <Image
-                src={"/assets/table_gustave_logo.webp"}
-                alt="table gustave logo"
-                width={257}
-                height={87}
-                className="max-h-full w-28 object-cover"
                 unoptimized={true}
               />
             </Link>

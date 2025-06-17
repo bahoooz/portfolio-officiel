@@ -82,6 +82,33 @@ export default function Skills({ title, autres_title }: MesSkillsTypes) {
                   framer motion
                 </Link>
               </li>
+              <li>
+                <Link
+                  href={"https://zustand-demo.pmnd.rs/"}
+                  target="_blank"
+                  className="hover:underline"
+                >
+                  zustand
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={"https://ui.shadcn.com/"}
+                  target="_blank"
+                  className="hover:underline"
+                >
+                  shadcn/ui
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={"https://zod.dev/"}
+                  target="_blank"
+                  className="hover:underline"
+                >
+                  zod
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="flex flex-col gap-9">
