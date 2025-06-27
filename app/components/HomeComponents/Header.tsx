@@ -123,16 +123,16 @@ export default function Header({
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <Link
-            href={"https://www.tiktok.com/@bahoz.coding?_t=8q1DYHqeDOy&_r=1"}
+            href={"https://github.com/bahoooz"}
             target="_blank"
-            className="rounded-full bg-[rgb(74,74,74,.5)] h-14 w-14 flex items-center justify-center group overflow-hidden"
+            className="rounded-full bg-[rgba(148,148,148,0.5)] h-14 w-14 flex items-center justify-center group overflow-hidden"
           >
             <Image
-              src={"/assets/tiktok_icon.svg"}
+              src={"/assets/github_icon.svg"}
               alt="linkedin icon"
               width={36}
               height={36}
-              className="group-hover:scale-[170%] duration-300 transition-all"
+              className="group-hover:scale-[190%] duration-300 transition-all"
             />
           </Link>
         </motion.div>
