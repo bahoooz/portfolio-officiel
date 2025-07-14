@@ -36,7 +36,7 @@ export default function Header({
       >
         <source src="/assets/bg-portfolio-dark.mp4" type="video/mp4" />
       </video>
-      <div className="flex justify-center lg:items-end lg:gap-32 xl:gap-48">
+      <div className="flex justify-center lg:items-end lg:gap-24 xl:gap-32">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -47,7 +47,7 @@ export default function Header({
               {title}
             </h1>
             <h2 className="dark:text-lightYellow text-lightBrown font-bold text-xl sm:text-2xl md:text-3xl xl:text-4xl">
-              Julien Brault Chérif
+              Julien Brault--Chérif
             </h2>
             <h3 className="dark:text-darkYellow text-darkBrown font-bold text-xl sm:text-2xl md:text-3xl">
               {specialty}
@@ -61,18 +61,24 @@ export default function Header({
           </p>
         </motion.div>
         <motion.div
-          className="relative rounded-lg overflow-hidden"
+          className="hidden lg:flex justify-center items-center rounded-lg overflow-hidden h-96 w-72 bg-white dark:bg-[#1F0F47]"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div className="absolute w-full h-full bg-black opacity-30"></div>
           <Image
-            src={"/assets/me_header.png"}
+            src={"/assets/logo_portfolio_light.png"}
             width={1000}
             height={1000}
             alt="photo Julien"
-            className="hidden lg:block h-96 w-52 object-cover"
+            className="hidden lg:block lg:dark:hidden object-cover w-4/5"
+          />
+          <Image
+            src={"/assets/logo_portfolio_dark.png"}
+            width={1000}
+            height={1000}
+            alt="photo Julien"
+            className="hidden lg:dark:block object-cover w-4/5"
           />
         </motion.div>
       </div>

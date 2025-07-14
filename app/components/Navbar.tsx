@@ -49,7 +49,7 @@ export default function Navbar({ get_quote }: NavbarTypes) {
           project_galery_link={
             isEnglish ? "Projects galery" : "Galerie des projets"
           }
-          findme_link={isEnglish ? "Where to find me" : "Où me retrouver"}
+          findme_link={isEnglish ? "My background" : "Mon parcours"}
           contact_link={isEnglish ? "Contact me" : "Me contacter"}
         />
       </div>

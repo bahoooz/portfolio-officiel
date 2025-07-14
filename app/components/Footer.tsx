@@ -12,7 +12,8 @@ export default function Footer({ home_link, find_me_link }: FooterTypes) {
   const isEnglish = pathname.startsWith("/en");
   const linkPrefix = isEnglish ? "/en" : "";
   const linkHref = pathname === "/en" ? "/" : "/en";
-  const flag = pathname === "/en" ? "/assets/flag_fr.png" : "/assets/flag_en.png";
+  const flag =
+    pathname === "/en" ? "/assets/flag_fr.png" : "/assets/flag_en.png";
 
   return (
     <footer className="bg-lightYellow dark:bg-bgFooter relative overflow-hidden py-24 md:py-36">
@@ -39,7 +40,10 @@ export default function Footer({ home_link, find_me_link }: FooterTypes) {
               </Link>
             </li>
             <li>
-              <Link href={`${linkPrefix}/portfolio`} className="hover:underline">
+              <Link
+                href={`${linkPrefix}/portfolio`}
+                className="hover:underline"
+              >
                 Portfolio
               </Link>
             </li>
@@ -61,26 +65,34 @@ export default function Footer({ home_link, find_me_link }: FooterTypes) {
                   "https://www.linkedin.com/in/julien-brault-ch%C3%A9rif-aa276226b/"
                 }
                 className="hover:underline"
+                target="_blank"
               >
                 Linkedin
               </Link>
             </li>
             <li>
               <Link
-                href={"https://fr.fiverr.com/bahoz_dev?up_rollout=true"}
+                href={
+                  "https://fr.fiverr.com/bahoz_dev/create-your-website-or-landing-page-in-web-development?context_referrer=seller_page&ref_ctx_id=1fd9dd31207f4413ab23a641067880cd&pckg_id=1&pos=1&seller_online=true&imp_id=4d30a857-3751-4448-9388-3a6fcb5946f0"
+                }
                 className="hover:underline"
+                target="_blank"
               >
                 Fiverr
               </Link>
             </li>
             <li>
               <Link
-                href={
-                  "https://www.tiktok.com/@bahoz.coding?_t=8q1DYHqeDOy&_r=1"
-                }
+                href={"https://github.com/bahoooz"}
                 className="hover:underline"
+                target="_blank"
               >
-                Tiktok
+                Github
+              </Link>
+            </li>
+            <li>
+              <Link href={"https://x.com/bahozdev"} className="hover:underline" target="_blank">
+                Twitter / X
               </Link>
             </li>
             <li>
