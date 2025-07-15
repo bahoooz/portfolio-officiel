@@ -38,7 +38,7 @@ export default function Header({
         <source src="/assets/bg-portfolio-dark-full-hd.mp4" type="video/mp4" />
       </video>
       <div className="absolute w-full h-full bg-[#8f67fd] dark:bg-[#120731] bg-opacity-25 dark:bg-opacity-70 top-0 -z-20 dark:-z-[5]"></div>
-      <div className="flex justify-center lg:items-end lg:gap-24 xl:gap-32">
+      <div className="flex justify-center items-center flex-col lg:flex-row lg:items-end lg:gap-24 xl:gap-32">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ export default function Header({
               {specialty}
             </h3>
           </div>
-          <p className="my-10 md:my-16 lg:my-32 lg:mb-0 dark:font-extralight font-light dark:text-white text-black">
+          <p className="mt-10 md:mt-16 lg:my-32 lg:mb-0 dark:font-extralight font-light dark:text-white text-black">
             "{citation}" <br className="sm:hidden" /> -{" "}
             <span className="dark:text-lightYellow text-lightBrown">
               {author}
@@ -63,7 +63,7 @@ export default function Header({
           </p>
         </motion.div>
         <motion.div
-          className="hidden lg:flex justify-center items-center rounded-lg overflow-hidden h-96 w-80"
+          className="flex justify-center items-center rounded-lg overflow-hidden lg:h-96 w-40 lg:w-80 mt-4 mb-8"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -73,14 +73,14 @@ export default function Header({
             width={1000}
             height={1000}
             alt="logo"
-            className="hidden lg:block lg:dark:hidden object-cover w-full"
+            className="block dark:hidden lg:dark:hidden object-cover w-full"
           />
           <Image
             src={"/assets/logo_portfolio_dark.png"}
             width={1000}
             height={1000}
             alt="logo"
-            className="hidden lg:dark:block object-cover w-full"
+            className="hidden dark:block object-cover w-full"
           />
         </motion.div>
       </div>
