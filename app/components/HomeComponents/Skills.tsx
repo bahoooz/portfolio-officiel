@@ -254,6 +254,15 @@ export default function Skills({ title, autres_title }: MesSkillsTypes) {
                   heroku
                 </Link>
               </li>
+              <li>
+                <Link
+                  href={"https://openai.com/fr-FR/"}
+                  target="_blank"
+                  className="hover:underline"
+                >
+                  open ai
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
