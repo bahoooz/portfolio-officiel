@@ -18,26 +18,26 @@ export default function Header({
 
   return (
     <header className="z-10 relative min-h-screen pt-40 lg:pt-32 pb-24 xl:pt-40">
-      <div className="absolute w-full h-full bg-bgColorLight bg-opacity-50 top-0 -z-10 dark:hidden"></div>
+      <div className="absolute w-full h-full bg-black bg-opacity-10 top-0 -z-10 dark:hidden"></div>
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10 -hue-rotate-90 block dark:hidden"
+        className="absolute top-0 left-0 w-full h-full object-cover -z-20 -hue-rotate-180 block dark:hidden invert brightness-50"
         autoPlay
         muted
         loop
         playsInline
       >
-        <source src="/assets/bg-portfolio-light-full-hd.mp4" type="video/mp4" />
+        <source src="/assets/bg-portfolio-video.mp4" type="video/mp4" />
       </video>
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10 hidden dark:block"
+        className="absolute top-0 left-0 w-full h-full object-cover -z-20 hidden dark:block"
         autoPlay
         muted
         loop
         playsInline
       >
-        <source src="/assets/bg-portfolio-dark-full-hd.mp4" type="video/mp4" />
+        <source src="/assets/bg-portfolio-video.mp4" type="video/mp4" />
       </video>
-      <div className="absolute w-full h-full bg-[#8f67fd] dark:bg-[#120731] bg-opacity-25 dark:bg-opacity-70 top-0 -z-20 dark:-z-[5]"></div>
+      <div className="absolute w-full h-full bg-[#8f67fd] dark:bg-[#120731] bg-opacity-15 dark:bg-opacity-70 top-0 -z-20 dark:-z-[5]"></div>
       <div className="flex justify-center items-center flex-col lg:flex-row lg:items-end lg:gap-24 xl:gap-32">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -45,17 +45,17 @@ export default function Header({
           transition={{ duration: 0.5 }}
         >
           <div className="flex flex-col gap-4 md:gap-5 xl:gap-6">
-            <h1 className="dark:text-white text-black font-bold text-2xl sm:text-3xl md:text-4xl xl:text-[40px]">
+            <h1 className="dark:text-white text-black font-bold text-2xl sm:text-3xl md:text-4xl xl:text-[40px] shadow-for-text">
               {title}
             </h1>
-            <h2 className="dark:text-lightYellow text-lightBrown font-bold text-xl sm:text-2xl md:text-3xl xl:text-4xl">
+            <h2 className="dark:text-lightYellow text-lightBrown font-bold text-xl sm:text-2xl md:text-3xl xl:text-4xl shadow-for-text">
               Julien Brault--Chérif
             </h2>
-            <h3 className="dark:text-darkYellow text-darkBrown font-bold text-xl sm:text-2xl md:text-3xl">
+            <h3 className="dark:text-darkYellow text-darkBrown font-bold text-xl sm:text-2xl md:text-3xl shadow-for-text">
               {specialty}
             </h3>
           </div>
-          <p className="mt-10 md:mt-16 lg:my-32 lg:mb-0 dark:font-extralight font-light dark:text-white text-black">
+          <p className="mt-10 md:mt-16 lg:my-32 lg:mb-0 dark:font-extralight font-light dark:text-white text-black shadow-for-text">
             "{citation}" <br className="sm:hidden" /> -{" "}
             <span className="dark:text-lightYellow text-lightBrown">
               {author}
