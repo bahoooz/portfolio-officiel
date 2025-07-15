@@ -22,18 +22,18 @@ export default function Home() {
         text={
           <>
             Développeur web ambitieux avec{" "}
-            <span className="text-lightBrown dark:text-darkYellow">
+            <span className="text-darkBrown dark:text-darkYellow">
               2 ans d&apos;expérience
             </span>
             , initié au développement web par la formation &quot;La Toile&quot;
             de{" "}
-            <span className="text-lightBrown dark:text-darkYellow">
+            <span className="text-darkBrown dark:text-darkYellow">
               l&apos;emlyon business school
             </span>{" "}
             4ème meilleure école de commerce française. Formé en autodidacte en
             suivant de nombreux tutoriels sur internet j&apos;ai pu réaliser de
             nombreux projets personnels et également en commençant le{" "}
-            <span className="text-lightBrown dark:text-darkYellow">
+            <span className="text-darkBrown dark:text-darkYellow">
               freelancing avec Fiverr
             </span>{" "}
             j&apos;ai pu me faire mes premiers clients et travailler sur des

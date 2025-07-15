@@ -21,7 +21,7 @@ export default function CardAvisClient({
         <div className="w-16 h-16 rounded overflow-hidden bg-black flex items-center justify-center">
           <span className="text-lightYellow text-3xl font-bold">{name.charAt(0)}</span>
         </div>
-        <h3 className="max-w-[100px] text-xl text-darkYellow">{name}</h3>
+        <h3 className="max-w-[100px] text-xl text-lightBrown dark:text-lightBrown">{name}</h3>
       </div>
       <p className="text-sm">&quot;{isEnglish ? commentary_en : commentary_fr}&quot;</p>
       <div className="flex items-center justify-between">

@@ -16,7 +16,7 @@ export default function Footer({ home_link, find_me_link }: FooterTypes) {
     pathname === "/en" ? "/assets/flag_fr.png" : "/assets/flag_en.png";
 
   return (
-    <footer className="bg-lightYellow dark:bg-bgFooter relative overflow-hidden py-24 md:py-36">
+    <footer className="bg-bgFooterLight dark:bg-bgFooterDark relative overflow-hidden py-24 md:py-36">
       <Image
         src={"/assets/diamond_icon.png"}
         alt="diamond icon"

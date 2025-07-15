@@ -44,7 +44,7 @@ export default function BurgerMenu({
             <Link
               onClick={() => setIsOpen(false)}
               href={`${linkPrefix}/`}
-              className="link relative text-2xl font-light dark:text-darkYellow text-black"
+              className="link relative text-2xl font-light dark:text-darkYellow text-darkBrown"
             >
               {home_link}
             </Link>
@@ -53,7 +53,7 @@ export default function BurgerMenu({
             <Link
               onClick={() => setIsOpen(false)}
               href={`${linkPrefix}/portfolio`}
-              className="link relative text-2xl font-light dark:text-darkYellow text-black"
+              className="link relative text-2xl font-light dark:text-darkYellow text-darkBrown"
             >
               {project_galery_link}
             </Link>
@@ -62,7 +62,7 @@ export default function BurgerMenu({
             <Link
               onClick={() => setIsOpen(false)}
               href={`${linkPrefix}/parcours`}
-              className="link relative text-2xl font-light dark:text-darkYellow text-black"
+              className="link relative text-2xl font-light dark:text-darkYellow text-darkBrown"
             >
               {findme_link}
             </Link>
@@ -71,7 +71,7 @@ export default function BurgerMenu({
             <Link
               onClick={() => setIsOpen(false)}
               href={`${linkPrefix}/contact`}
-              className="link relative text-2xl font-light dark:text-darkYellow text-black"
+              className="link relative text-2xl font-light dark:text-darkYellow text-darkBrown"
             >
               {contact_link}
             </Link>

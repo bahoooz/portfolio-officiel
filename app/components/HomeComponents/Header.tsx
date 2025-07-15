@@ -15,27 +15,29 @@ export default function Header({
   author,
   discover_the_rest,
 }: HeaderTypes) {
+
   return (
     <header className="z-10 relative min-h-screen pt-40 lg:pt-32 pb-24 xl:pt-40">
-      <div className="absolute w-full h-full bg-bgColorLight bg-opacity-75 top-0 -z-10 dark:hidden"></div>
+      <div className="absolute w-full h-full bg-bgColorLight bg-opacity-50 top-0 -z-10 dark:hidden"></div>
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover -z-20 dark:-z-20"
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10 -hue-rotate-90 block dark:hidden"
         autoPlay
         muted
         loop
         playsInline
       >
-        <source src="/assets/bg-portfolio-light.mp4" type="video/mp4" />
+        <source src="/assets/bg-portfolio-light-full-hd.mp4" type="video/mp4" />
       </video>
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover -z-30 dark:-z-10"
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10 hidden dark:block"
         autoPlay
         muted
         loop
         playsInline
       >
-        <source src="/assets/bg-portfolio-dark.mp4" type="video/mp4" />
+        <source src="/assets/bg-portfolio-dark-full-hd.mp4" type="video/mp4" />
       </video>
+      <div className="absolute w-full h-full bg-[#8f67fd] dark:bg-[#120731] bg-opacity-25 dark:bg-opacity-70 top-0 -z-20 dark:-z-[5]"></div>
       <div className="flex justify-center lg:items-end lg:gap-24 xl:gap-32">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -61,7 +63,7 @@ export default function Header({
           </p>
         </motion.div>
         <motion.div
-          className="hidden lg:flex justify-center items-center rounded-lg overflow-hidden h-96 w-72 bg-white dark:bg-[#1F0F47]"
+          className="hidden lg:flex justify-center items-center rounded-lg overflow-hidden h-96 w-80"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -70,15 +72,15 @@ export default function Header({
             src={"/assets/logo_portfolio_light.png"}
             width={1000}
             height={1000}
-            alt="photo Julien"
-            className="hidden lg:block lg:dark:hidden object-cover w-4/5"
+            alt="logo"
+            className="hidden lg:block lg:dark:hidden object-cover w-full"
           />
           <Image
             src={"/assets/logo_portfolio_dark.png"}
             width={1000}
             height={1000}
-            alt="photo Julien"
-            className="hidden lg:dark:block object-cover w-4/5"
+            alt="logo"
+            className="hidden lg:dark:block object-cover w-full"
           />
         </motion.div>
       </div>

@@ -25,11 +25,11 @@ body {
     background: none;
   }
   .scrollbar-custom::-webkit-scrollbar-thumb {
-    background: #6b5121;
+    background: #5E5DDE;
     border-radius: 5px;
   }
   .dark .scrollbar-custom::-webkit-scrollbar-thumb {
-    background: #ffeecd;
+    background: #9291FF;
   }
 }
 
@@ -46,11 +46,11 @@ body {
 }
 
 .dark .link::after {
-  background-color: white;
+  background-color: #9291FF;
 }
 
 .link::after {
-  background-color: #c6b18a;
+  background-color: #7366FF;
 }
 
 .link:hover::after {
