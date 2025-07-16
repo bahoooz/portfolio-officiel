@@ -112,13 +112,13 @@ export default function Header({
           transition={{ duration: 0.5, delay: 0.5 }}
         >
           <Link
-            href={"https://fr.fiverr.com/bahoz_dev?up_rollout=true"}
+            href={"https://fr.fiverr.com/bahoz_dev/create-your-website-or-landing-page-in-web-development?context_referrer=seller_page&ref_ctx_id=1fd9dd31207f4413ab23a641067880cd&pckg_id=1&pos=1&seller_online=true&imp_id=4d30a857-3751-4448-9388-3a6fcb5946f0"}
             target="_blank"
             className="rounded-full bg-[rgb(29,191,115,.5)] h-14 w-14 flex items-center justify-center group overflow-hidden"
           >
             <Image
               src={"/assets/fiverr_icon.svg"}
-              alt="linkedin icon"
+              alt="fiverr icon"
               width={36}
               height={36}
               className="group-hover:scale-[170%] duration-300 transition-all"
@@ -137,7 +137,7 @@ export default function Header({
           >
             <Image
               src={"/assets/github_icon.svg"}
-              alt="linkedin icon"
+              alt="github icon"
               width={36}
               height={36}
               className="group-hover:scale-[190%] duration-300 transition-all"
@@ -155,7 +155,7 @@ export default function Header({
           >
             <Image
               src={"/assets/gmail_icon.svg"}
-              alt="linkedin icon"
+              alt="gmail icon"
               width={36}
               height={36}
               className="group-hover:scale-[125%] duration-300 transition-all"
