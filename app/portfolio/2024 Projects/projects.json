@@ -37,9 +37,9 @@
     "website_link": "https://gmod-creators.com/"
   },
   "project_4": {
-    "title": "Blog Perso",
-    "enTitle": "Personal Blog",
-    "link": "blog_perso",
+    "title": "Blog Entraînement",
+    "enTitle": "Training Blog",
+    "link": "training_blog",
     "img_primary": "/assets/bahoz_logo.jpg",
     "width_img": 1024,
     "height_img": 1024,
