@@ -7,9 +7,10 @@ import projects2023 from "@/app/portfolio/2023 Projects/projects.json";
 import Image from "next/image";
 import Techno from "@/app/components/PortfolioComponents/Techno";
 import Link from "next/link";
-import { ArrowCircleLeft } from "@phosphor-icons/react";
+import { ArrowCircleLeft, GithubLogo } from "@phosphor-icons/react";
 import { motion } from "framer-motion";
 import projects2025 from "@/app/portfolio/2025 Projects/projects.json";
+import { Project } from "../types/typesProject";
 const projects = [
   ...Object.values(projects2023),
   ...Object.values(projects2024),
@@ -21,7 +22,7 @@ export default function ProjectPage() {
   const project_title = pathname
     ? decodeURIComponent(pathname.split("/").pop() as string) || ""
     : "";
-  const project = Object.values(projects).find(
+  const project: Project | undefined = Object.values(projects).find(
     (project) => project.link === project_title
   );
 
@@ -93,7 +94,7 @@ export default function ProjectPage() {
             transition={{ duration: 0.4, delay: 0.6 }}
             className="flex justify-center"
           >
-            <div className="flex lg:flex-col gap-3 overflow-x-scroll lg:overflow-x-auto scrollbar-custom pb-2">
+            <div className="flex gap-3 overflow-x-scroll lg:overflow-x-hidden lg:flex-wrap scrollbar-custom pb-2">
               {Object.values(project.technos).map(
                 (techno: string, i: number) => (
                   <Techno name={techno} key={i} />
@@ -102,18 +103,35 @@ export default function ProjectPage() {
             </div>
           </motion.div>
           <motion.div
-            className="bg-lightBrown dark:bg-lightYellow flex items-center justify-center text-center text-white dark:text-bgColorDark rounded-xl font-medium lg:w-full h-[50px] hover:bg-opacity-75 dark:hover:bg-opacity-75"
+            className="flex flex-col items-center gap-3 justify-center text-center text-white dark:text-bgColorDark font-medium lg:w-full hover:bg-opacity-75 dark:hover:bg-opacity-75"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.4, delay: 0.8 }}
           >
             <Link
-              className="w-full h-full flex justify-center items-center"
+              className="w-full h-[50px] flex justify-center items-center bg-lightBrown dark:bg-lightYellow rounded-xl hover:bg-lightBrown/80 dark:hover:bg-lightYellow/80"
               href={project.website_link}
               target="_blank"
             >
-              <p>Visiter le site</p>
+              Visiter le site
             </Link>
+            <div className="flex items-center gap-3 w-full">
+              <button
+                className="w-full h-[50px] flex justify-center items-center border-darkBrown text-darkBrown border-2 dark:text-darkYellow bg-transparent dark:border-darkYellow rounded-xl cursor-wait"
+                disabled
+              >
+                Voir la démo
+              </button>
+              {project.github_link && (
+                <a
+                  href={project.github_link}
+                  target="_blank"
+                  className="h-[50px] aspect-square bg-gray-800 hover:bg-gray-800/80 dark:bg-gray-700 dark:hover:bg-gray-700/80 flex justify-center items-center rounded-xl"
+                >
+                  <GithubLogo color="white" size={28} />
+                </a>
+              )}
+            </div>
           </motion.div>
         </div>
       </div>

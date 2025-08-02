@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import { MesSkillsTypes } from "../types/typesComponents";
+import Image from "next/image";
 
 export default function Skills({ title, autres_title }: MesSkillsTypes) {
   return (
@@ -22,22 +22,38 @@ export default function Skills({ title, autres_title }: MesSkillsTypes) {
             <p className="dark:text-darkYellow text-darkBrown">languages</p>
             <ul className="flex flex-col gap-3">
               <li>
-                <Link
+                <a
                   href={"https://developer.mozilla.org/fr/docs/Web/JavaScript"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
                 >
+                  <Image
+                    src={"/assets/technos_icon/js_icon.png"}
+                    alt="js icon"
+                    width={27}
+                    height={27}
+                    className="size-4 rounded-sm"
+                    unoptimized
+                  />
                   javascript
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={"https://www.typescriptlang.org/"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-[6px] hover:scale-95 transition-all duration-300 -ml-0.5"
                 >
+                  <Image
+                    src={"/assets/technos_icon/ts_icon.png"}
+                    alt="js icon"
+                    width={27}
+                    height={27}
+                    className="size-5 rounded-sm"
+                    unoptimized
+                  />
                   typescript
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -47,67 +63,123 @@ export default function Skills({ title, autres_title }: MesSkillsTypes) {
             </p>
             <ul className="flex flex-col gap-3">
               <li>
-                <Link
+                <a
                   href={"https://nextjs.org/"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
                 >
+                  <Image
+                    src={"/assets/technos_icon/next_icon.png"}
+                    alt="js icon"
+                    width={27}
+                    height={27}
+                    className="size-4 rounded-sm"
+                    unoptimized
+                  />
                   nextjs
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={"https://fr.react.dev/"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
                 >
+                  <Image
+                    src={"/assets/technos_icon/react_icon.png"}
+                    alt="js icon"
+                    width={27}
+                    height={27}
+                    className="size-4 rounded-sm"
+                    unoptimized
+                  />
                   reactjs
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={"https://tailwindcss.com/"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
                 >
+                  <Image
+                    src={"/assets/technos_icon/tailwind_icon.png"}
+                    alt="js icon"
+                    width={27}
+                    height={27}
+                    className="size-4 w-6 rounded-sm"
+                    unoptimized
+                  />
                   tailwindcss
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={"https://www.framer.com/motion/"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
                 >
+                  <Image
+                    src={"/assets/technos_icon/framer_motion_icon.png"}
+                    alt="js icon"
+                    width={27}
+                    height={27}
+                    className="size-4 rounded-sm"
+                    unoptimized
+                  />
                   framer motion
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={"https://zustand-demo.pmnd.rs/"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
                 >
+                  <Image
+                    src={"/assets/technos_icon/zustand_icon.svg"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-4 rounded-sm"
+                    unoptimized
+                  />
                   zustand
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={"https://ui.shadcn.com/"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
                 >
+                  <Image
+                    src={"/assets/technos_icon/shadcn_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-4 rounded-sm"
+                    unoptimized
+                  />
                   shadcn/ui
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={"https://zod.dev/"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
                 >
+                  <Image
+                    src={"/assets/technos_icon/zod_icon.webp"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-4 rounded-sm"
+                    unoptimized
+                  />
                   zod
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -117,40 +189,72 @@ export default function Skills({ title, autres_title }: MesSkillsTypes) {
             </p>
             <ul className="flex flex-col gap-3">
               <li>
-                <Link
+                <a
                   href={"https://www.figma.com/fr-fr/"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
                 >
+                  <Image
+                    src={"/assets/technos_icon/figma_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-4 rounded-sm"
+                    unoptimized
+                  />
                   figma
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={"https://www.adobe.com/fr/products/photoshop.html"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-[6px] hover:scale-95 transition-all duration-300 -ml-0.5"
                 >
+                  <Image
+                    src={"/assets/technos_icon/photoshop_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-6 rounded-sm"
+                    unoptimized
+                  />
                   photoshop
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={"https://www.adobe.com/fr/products/illustrator.html"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-[6px] hover:scale-95 transition-all duration-300 -ml-0.5"
                 >
+                  <Image
+                    src={"/assets/technos_icon/illustrator_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-6 rounded-sm"
+                    unoptimized
+                  />
                   illustrator
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={"https://www.adobe.com/fr/products/premiere.html"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-[6px] hover:scale-95 transition-all duration-300 -ml-0.5"
                 >
+                  <Image
+                    src={"/assets/technos_icon/premiere_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-6 rounded-sm"
+                    unoptimized
+                  />
                   premiere pro
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -158,49 +262,123 @@ export default function Skills({ title, autres_title }: MesSkillsTypes) {
             <p className="dark:text-darkYellow text-darkBrown">backend</p>
             <ul className="flex flex-col gap-3">
               <li>
-                <Link
+                <a
                   href={"https://nodejs.org/fr"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
                 >
-                  nextjs backend
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={"https://nodejs.org/fr"}
-                  target="_blank"
-                  className="hover:underline"
-                >
+                  <Image
+                    src={"/assets/technos_icon/nodejs_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-4 h-5 rounded-sm"
+                    unoptimized
+                  />
                   nodejs
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={"https://expressjs.com/"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
                 >
+                  <Image
+                    src={"/assets/technos_icon/express_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-4 rounded-sm"
+                    unoptimized
+                  />
                   expressjs
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
+                  href={"https://nodejs.org/fr"}
+                  target="_blank"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
+                >
+                  <Image
+                    src={"/assets/technos_icon/next_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-4 rounded-sm"
+                    unoptimized
+                  />
+                  server actions
+                </a>
+              </li>
+              <li>
+                <a
+                  href={"https://www.prisma.io/"}
+                  target="_blank"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
+                >
+                  <Image
+                    src={"/assets/technos_icon/prisma_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-4 rounded-sm"
+                    unoptimized
+                  />
+                  prisma
+                </a>
+              </li>
+              <li>
+                <a
                   href={"https://www.mongodb.com/fr-fr"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
                 >
+                  <Image
+                    src={"/assets/technos_icon/mongodb_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-4 rounded-sm"
+                    unoptimized
+                  />
                   mongodb
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={"https://supabase.com/"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
                 >
+                  <Image
+                    src={"/assets/technos_icon/supabase_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-4 h-5 rounded-sm"
+                    unoptimized
+                  />
                   supabase
-                </Link>
+                </a>
+              </li>
+              <li>
+                <a
+                  href={"https://www.postgresql.org/"}
+                  target="_blank"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
+                >
+                  <Image
+                    src={"/assets/technos_icon/postgresql_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-4 rounded-sm"
+                    unoptimized
+                  />
+                  postgresql
+                </a>
               </li>
             </ul>
           </div>
@@ -210,58 +388,123 @@ export default function Skills({ title, autres_title }: MesSkillsTypes) {
             </p>
             <ul className="flex flex-col gap-3">
               <li>
-                <Link
+                <a
                   href={"https://github.com/"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-[6px] hover:scale-95 transition-all duration-300 -ml-0.5"
                 >
+                  <Image
+                    src={"/assets/technos_icon/github_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-5 rounded-sm"
+                    unoptimized
+                  />
                   github
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={"https://git-scm.com/"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
                 >
+                  <Image
+                    src={"/assets/technos_icon/git_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-5 rounded-sm"
+                    unoptimized
+                  />
                   git
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={"https://vercel.com/home"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
                 >
+                  <Image
+                    src={"/assets/technos_icon/vercel_icon.svg"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-4 rounded-sm"
+                    unoptimized
+                  />
                   vercel
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={"https://www.netlify.com/"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
                 >
+                  <Image
+                    src={"/assets/technos_icon/netlify_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-4 rounded-sm"
+                    unoptimized
+                  />
                   netlify
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
+                  href={"https://render.com/"}
+                  target="_blank"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
+                >
+                  <Image
+                    src={"/assets/technos_icon/render_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-4 rounded-sm"
+                    unoptimized
+                  />
+                  render
+                </a>
+              </li>
+              <li>
+                <a
                   href={"https://www.heroku.com/home"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-2 hover:scale-95 transition-all duration-300"
                 >
+                  <Image
+                    src={"/assets/technos_icon/heroku_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-4 rounded-sm"
+                    unoptimized
+                  />
                   heroku
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={"https://openai.com/fr-FR/"}
                   target="_blank"
-                  className="hover:underline"
+                  className="flex items-center gap-[6px] hover:scale-95 transition-all duration-300 -ml-0.5"
                 >
+                  <Image
+                    src={"/assets/technos_icon/chatgpt_icon.png"}
+                    alt="js icon"
+                    width={16}
+                    height={16}
+                    className="size-5 rounded-sm"
+                    unoptimized
+                  />
                   open ai
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

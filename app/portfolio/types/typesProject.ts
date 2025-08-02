@@ -14,4 +14,5 @@ export type Project = {
   enDescription?: string;
   technos: string[];
   website_link: string;
+  github_link?: string;
 };

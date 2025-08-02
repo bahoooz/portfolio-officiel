@@ -1,5 +1,31 @@
 {
   "project_1": {
+    "title": "Todolist Next.js x Express.js",
+    "enTitle": "Todolist Next.js x Express.js",
+    "link": "todolist-next-express",
+    "img_primary": "/assets/todolist_next_express_logo.png",
+    "width_img": 1024,
+    "height_img": 1024,
+    "color_bg": "#fff",
+    "description": "Cette todolist est un projet de test avec les technologies Express, Prisma, Postgresql et la plateforme de déploiement Render visant à approfondir ma maîtrise de ces technologies.",
+    "enDescription": "This Todolist is a test project with Express, Prism, PostgreSql technologies and the Render deployment platform aimed at deepening my mastery of these technologies.",
+    "technos": [
+      "Nextjs",
+      "React",
+      "Postgresql",
+      "TailwindCSS",
+      "Typescript",
+      "Nodejs",
+      "Expressjs",
+      "Zustand",
+      "Prisma",
+      "Vercel",
+      "Render"
+    ],
+    "website_link": "https://todolist-express-frontend.vercel.app/",
+    "github_link": "https://github.com/bahoooz/todolist-express-frontend"
+  },
+  "project_2": {
     "title": "My Genius Recipe",
     "enTitle": "My Genius Recipe",
     "link": "mgr",
@@ -13,14 +39,19 @@
       "Nextjs",
       "React",
       "Supabase",
+      "Postgresql",
       "TailwindCSS",
       "Typescript",
       "Stripe",
-      "OpenAI"
+      "OpenAI",
+      "Zustand",
+      "Vercel",
+      "Figma"
     ],
-    "website_link": "https://www.mygeniusrecipe.com"
+    "website_link": "https://www.mygeniusrecipe.com",
+    "github_link": "https://github.com/bahoooz/my-genius-recipe"
   },
-  "project_2": {
+  "project_3": {
     "title": "MeloVib's",
     "enTitle": "MeloVib's",
     "link": "melovibs",
@@ -36,8 +67,12 @@
       "TailwindCSS",
       "NextAuth",
       "MongoDB",
-      "Typescript"
+      "Figma",
+      "Typescript",
+      "Zustand",
+      "Vercel"
     ],
-    "website_link": "https://www.melovibs.com"
+    "website_link": "https://www.melovibs.com",
+    "github_link": "https://github.com/bahoooz/MeloVibs"
   }
 }

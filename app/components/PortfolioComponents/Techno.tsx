@@ -35,6 +35,20 @@ export default function Techno({ name }: { name: string }) {
         return "/assets/technos_icon/supabase_icon.png";
       case "OpenAI":
         return "/assets/technos_icon/chatgpt_icon.png";
+      case "Postgresql":
+        return "/assets/technos_icon/postgresql_icon.png";
+      case "Zustand":
+        return "/assets/technos_icon/zustand_icon.svg";
+      case "Prisma":
+        return "/assets/technos_icon/prisma_icon.png";
+      case "Vercel":
+        return "/assets/technos_icon/vercel_icon.svg";
+      case "Render":
+        return "/assets/technos_icon/render_icon.png";
+      case "Netlify":
+        return "/assets/technos_icon/netlify_icon.png";
+      case "Figma":
+        return "/assets/technos_icon/figma_icon.png";
       default:
         return "";
     }
