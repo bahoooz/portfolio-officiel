@@ -37,7 +37,7 @@ export default function Header({
       >
         <source src="/assets/bg-portfolio-video.mp4" type="video/mp4" />
       </video>
-      <div className="absolute w-full h-full bg-[#8f67fd] dark:bg-[#120731] bg-opacity-15 dark:bg-opacity-70 top-0 -z-20 dark:-z-[5]"></div>
+      <div className="absolute w-full h-full bg-[#8f67fd] dark:bg-[#120731] bg-opacity-10 dark:bg-opacity-70 top-0 -z-20 dark:-z-[5]"></div>
       <div className="flex justify-center items-center flex-col lg:flex-row lg:items-end lg:gap-24 xl:gap-32">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
